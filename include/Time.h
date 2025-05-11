@@ -11,6 +11,7 @@ private:
 public:
     void setTime(int hour, int minutes);
     std::string getTime() const;
-    //Operator ++ come fare
+    Time operator++(int);
+    bool operator==(const Time &other) const;
 };
 #endif //TIME_H
