@@ -9,6 +9,7 @@ private:
     int hour;
     int minute;
 public:
+    //Manca il costruttore
     void setTime(int hour, int minutes);
     std::string getTime() const;
     Time operator++(int);

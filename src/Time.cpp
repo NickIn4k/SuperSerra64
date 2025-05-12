@@ -2,6 +2,8 @@
 
 //Ciclo => aumenta l'ora di minuto in minuto la logica di accensione/spegnimento sarà in impianto
 void Time::setTime(int hour, int minutes) {
+    if(hour>23 || hour<0 || minutes>59 || minutes<0)
+        return;     //Da sostituire con un throw new
     while(this->hour != hour || this->minute != minutes)
         (*this)++;
 }
