@@ -1,9 +1,14 @@
 #include "../include/Time.h"
 
+#include <stdexcept>
+#define MAX_H 24
+#define MIN 0
+#define MAX_M 60
+
 //Ciclo => aumenta l'ora di minuto in minuto la logica di accensione/spegnimento sarà in impianto
 void Time::setTime(int hour, int minutes) {
-    if(hour>23 || hour<0 || minutes>59 || minutes<0)
-        return;     //Da sostituire con un throw new
+    if(hour > MAX_H || hour < MIN || minutes > MAX_M || minutes < MIN)
+        throw std::invalid_argument("Invalid time");        //Solleva un'eccezione
     while(this->hour != hour || this->minute != minutes)
         (*this)++;
 }
@@ -32,3 +37,8 @@ Time Time::operator++(int) {
 bool Time::operator==(const Time &other) const {
     return this->hour == other.hour && this->minute == other.minute;
 }
+
+Time::Time() = default;
+
+Time::Time(int h, int min) : hour{h}, minute{min}{};
+
