@@ -21,3 +21,13 @@ std::string Impianto::Spegni() {
 int Impianto::getID() {
     return this->ID;
 }
+//Restituisce una stringa con le info principali dell’impianto
+std::string Impianto::Stampa() {
+    std::string stato = Accesso ? "ACCESO" : "SPENTO";
+
+    return "Impianto: " + Nome + "\n"
+         + "Tipo pianta: " + TipoPianta + "\n"
+         + "ID: " + std::to_string(ID) + "\n"
+         + "Stato: " + stato + "\n"
+         + "Ultima accensione: " + ultimaAccensione.getTime();
+}

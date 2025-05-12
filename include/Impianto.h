@@ -17,7 +17,7 @@ public:
     Impianto();
     int getID();
     std::string Accendi();
-    std::string Spegni();
+   virtual std::string Spegni();
     std::string Stampa();
 };
 #endif //IMPIANTO_H
