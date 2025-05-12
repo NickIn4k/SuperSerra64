@@ -1,9 +1,15 @@
 #include "../include/Time.h"
-
 #include <stdexcept>
+
 #define MAX_H 24
 #define MIN 0
 #define MAX_M 60
+
+//Costruttore di default (in caso di necessità)
+Time::Time() = default;
+
+//Da inizializzare a 0:0
+Time::Time(int h, int min) : hour{h}, minute{min}{};
 
 //Ciclo => aumenta l'ora di minuto in minuto la logica di accensione/spegnimento sarà in impianto
 void Time::setTime(int hour, int minutes) {
@@ -38,7 +44,5 @@ bool Time::operator==(const Time &other) const {
     return this->hour == other.hour && this->minute == other.minute;
 }
 
-Time::Time() = default;
 
-Time::Time(int h, int min) : hour{h}, minute{min}{};
 
