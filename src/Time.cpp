@@ -41,4 +41,3 @@ bool Time::operator==(const Time &other) const {
 Time::Time() = default;
 
 Time::Time(int h, int min) : hour{h}, minute{min}{};
-
