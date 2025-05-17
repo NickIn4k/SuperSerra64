@@ -1,21 +1,23 @@
 #include "../include/Impianto.h"
 
-Impianto::Impianto() {
-    ID = 0;
-    TipoPianta = "";
-    Nome = "";
-    Accesso = false;
-}
+Impianto::Impianto() = default;
+
+Impianto::Impianto(std::string n, Time a) : nome{n}, accensione{a} {
+    acceso = false;
+    ID = contId++;
+    ultimaAccensione = Time(-1,-1); //Prima accensione => cond di default
+};
+
 //Accende l’impianto, imposta Accesso a true e salva l’orario di accensione
 std::string Impianto::Accendi() {
-    Accesso = true;
-    ultimaAccensione = Accensione;
-    return "[Accensione] L’impianto '" + Nome + "' è stato acceso";
+    acceso = true;
+    ultimaAccensione = accensione;
+    return "[Accensione] L’impianto '" + nome + "' è stato acceso";
 }
 //Spegne l’impianto, imposta Accesso a false
 std::string Impianto::Spegni() {
-    Accesso = false;
-    return "[Spegnimento] L’impianto '" + Nome + "' è stato spento";
+    acceso = false;
+    return "[Spegnimento] L’impianto '" + nome + "' è stato spento";
 }
 //Restituisce l'ID dell'impianto
 int Impianto::getID() {
@@ -23,11 +25,13 @@ int Impianto::getID() {
 }
 //Restituisce una stringa con le info principali dell’impianto
 std::string Impianto::Stampa() {
-    std::string stato = Accesso ? "ACCESO" : "SPENTO";
+    std::string stato = acceso ? "ACCESO" : "SPENTO";
 
-    return "Impianto: " + Nome + "\n"
-         + "Tipo pianta: " + TipoPianta + "\n"
+    return "Impianto: " + nome + "\n"
          + "ID: " + std::to_string(ID) + "\n"
          + "Stato: " + stato + "\n"
          + "Ultima accensione: " + ultimaAccensione.getTime();
 }
+
+//Var static
+int Impianto::contId = 0;
