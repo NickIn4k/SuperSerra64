@@ -1,0 +1,4 @@
+#ifndef AUTOMATICO_H
+#define AUTOMATICO_H
+
+#endif //AUTOMATICO_H

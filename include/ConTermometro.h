@@ -1,0 +1,4 @@
+#ifndef CONTERMOMETRO_H
+#define CONTERMOMETRO_H
+
+#endif //CONTERMOMETRO_H
