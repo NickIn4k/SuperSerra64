@@ -4,8 +4,8 @@
 
 #include <map>
 #include <memory>
-#include "Impianto.h"
-#include "Time.h"
+#include "../include/Impianto.h"
+#include "../include/Time.h"
 
 class Serra {
 private:
@@ -14,9 +14,9 @@ private:
 public:
     Serra();
     void AggiornaOrario(int hour, int minute);
-    void AggiungiImpianto();
+    void AggiungiImpianto(std::string n, Time a);
     void RimuoviImpianto(int ID);
     std::string StampaStato() const;
-    std::string SpegniImpiantoManuale();
+    std::string SpegniImpiantoManuale(int ID);
 };
 #endif //SERRA_H
