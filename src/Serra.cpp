@@ -9,7 +9,7 @@ void Serra::AggiornaOrario(int hour, int minute) {
 }
 
 void Serra::AggiungiImpianto(std::string n, Time a) {
-    std::unique_ptr<Impianto> nuovoImpianto = std::make_unique<Impianto>(n, a);
+    std::unique_ptr<Impianto> nuovoImpianto = std::make_unique<Impianto>(n);
     //unique_ptr non può essere copiato, ma solo spostato (tramite move())
     impianti.insert({nuovoImpianto->getID(), std::move(nuovoImpianto)});
 }

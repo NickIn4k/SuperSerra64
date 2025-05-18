@@ -5,21 +5,21 @@
 #include "../include/Time.h"
 
 class Impianto {
-private:
+protected:
     static int contId;
     int ID;
     std::string nome;
-    bool acceso; // true = acceso, false = spento
-    Time accensione;
+    bool acceso; //True = acceso, false = spento
     Time ultimaAccensione;
 
 public:
-    Impianto();
-    Impianto(std::string Nome, Time Accensione);
-    int getID();
-    std::string Accendi();
+    Impianto() = default;
+    explicit Impianto(const std::string &Nome);
+    int getID() const;
+    virtual std::string Accendi(Time accensione) = 0;
     virtual std::string Spegni() = 0;
-    std::string Stampa();
+    std::string Stampa() const;
+    virtual ~Impianto() = default;
 };
 #endif //IMPIANTO_H
 
