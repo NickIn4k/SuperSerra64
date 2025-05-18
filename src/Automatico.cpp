@@ -11,20 +11,23 @@ void Automatico::SetStart(Time accensione) {
 }
 
 std::string Automatico::Spegni() override {
-    contatore++;
-    if(this->contatore== this->timerSpegnimento) {
-        this->contatore = Time(0,0);
-        acceso = false;
-        return "Impianto spento automaticamente";
-    }
-    return "";
+    this->contatore = Time(0,0);
+    acceso = false;
+    return "Impianto spento automaticamente";
 }
 
 std::string Automatico::Accendi(Time now) override{
-    if(this->accensione == now) {
-        this->acceso = true;
-        this->ultimaAccensione = now;
-        return "Impianto acceso alle ore: " + now.getTime();
+    this->acceso = true;
+    this->ultimaAccensione = now;
+    return "Impianto acceso alle ore: " + now.getTime();
+}
+
+void Automatico::ChangeTime(Time now) override {
+    if(!acceso && now == this->accensione)
+        Accendi(now);
+    else{
+        contatore++;
+        if(this->contatore == this->timerSpegnimento)
+            Spegni();
     }
-    return "";
 }

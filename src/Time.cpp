@@ -38,6 +38,16 @@ bool Time::operator==(const Time &other) const {
     return this->hour == other.hour && this->minute == other.minute;
 }
 
+int Time::DifferenzaMin(const Time &other) const {
+    Time tmp = *this;
+    int differenza = 0;
+    while (!(tmp == other)) {
+        tmp++;
+        differenza++;
+    }
+    return differenza;
+}
+
 Time::Time() = default;
 
 Time::Time(int h, int min) : hour{h}, minute{min}{};

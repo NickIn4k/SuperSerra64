@@ -17,5 +17,6 @@ public:
     void SetStart(Time accensione);
     std::string Spegni() override;
     std::string Accendi(Time now) override;
+    void ChangeTime(Time now) override;
 };
 #endif //AUTOMATICO_H

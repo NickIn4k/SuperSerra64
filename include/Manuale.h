@@ -5,8 +5,6 @@
 #include "../include/Impianto.h"
 
 class Manuale: public Impianto {
-private:
-    Time contatore;
 protected:
     Time spegnimento;
     Time accensione;
@@ -14,6 +12,7 @@ public:
     Manuale() = default;
     Manuale(const std::string &Nome, Time Accensione, Time Spegnimento);
     std::string Spegni() override;
-    std::string Accendi(Time accensione) override;
+    std::string Accendi(Time now) override;
+    void ChangeTime(Time now) override;
 };
 #endif //MANUALE_H

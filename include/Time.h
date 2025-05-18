@@ -13,6 +13,7 @@ public:
     Time(int h, int min);
     void setTime(int hour, int minutes);
     std::string getTime() const;
+    int DifferenzaMin(const Time &other) const;
     Time operator++(int);
     bool operator==(const Time &other) const;
 };
