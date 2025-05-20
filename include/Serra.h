@@ -14,7 +14,7 @@ private:
 public:
     Serra();
     void AggiornaOrario(int hour, int minute);
-    void AggiungiImpianto(std::string n, Time a);
+    void AggiungiImpianto(std::unique_ptr<Impianto> nuovoImpianto);
     void RimuoviImpianto(int ID);
     std::string StampaStato() const;
     std::string SpegniImpiantoManuale(int ID);
