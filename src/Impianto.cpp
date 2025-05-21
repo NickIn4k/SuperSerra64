@@ -10,6 +10,11 @@ int Impianto::getID() const {
     return this->ID;
 }
 
+//Restituisce il nome dell'impianto
+std::string Impianto::getNome() const {
+    return this->nome;
+}
+
 //Restituisce una stringa con le info principali dell’impianto
 std::string Impianto::Stampa() const{
     std::string stato = acceso ? "ACCESO" : "SPENTO";

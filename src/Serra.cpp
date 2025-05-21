@@ -16,6 +16,9 @@ void Serra::setTime(int hour, int minute) {
     while(now.Hour != hour || now.Minute != minute) {
         now++;
         //CHECK PER OGNI SINGOLO IMPIANTO CON IL METODO OnTimeChanged(now)
+        for (auto it = impianti.begin(); it != impianti.end(); ++it) {
+            it->second->OnTimeChanged(now);
+        }
     }
 }
 
@@ -37,4 +40,15 @@ std::string Serra::SpegniImpianto(int ID) {
 
 void Serra::ResetTime() {
     this->now = Time(0,0);
+}
+
+//Ricerca di un impianto per nome
+Impianto* Serra::getImpianto(std::string nome) const {
+    for (auto it = impianti.begin(); it != impianti.end(); ++it) {
+        const std::unique_ptr<Impianto>& ptr = it->second;
+        if (ptr->getNome() == nome) {
+            return ptr.get();
+        }
+    }
+    return nullptr;
 }

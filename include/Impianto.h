@@ -16,6 +16,7 @@ public:
     Impianto() = default;
     explicit Impianto(const std::string &Nome);
     int getID() const;
+    std::string getNome() const;
     virtual std::string Accendi(Time accensione) = 0;
     virtual std::string Spegni() = 0;
     virtual void OnTimeChanged(Time now) = 0;

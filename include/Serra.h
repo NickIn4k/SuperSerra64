@@ -20,5 +20,6 @@ public:
     std::string StampaStato() const;
     std::string ResetAllTimers();   //Da implementare
     void setTime(int hour, int minute);
+    Impianto* getImpianto(std::string nome) const;
 };
 #endif //SERRA_H
