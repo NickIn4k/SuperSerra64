@@ -13,11 +13,12 @@ private:
     Time now;
 public:
     Serra();
-    void AggiornaOrario(int hour, int minute);
+    void AggiornaOrario(Time t);
     void AggiungiImpianto(std::unique_ptr<Impianto> nuovoImpianto);
     void RimuoviImpianto(int ID);
     void ResetTime();
     std::string StampaStato() const;
-    std::string SpegniImpiantoManuale(int ID);
+    std::string ResetAllTimers();   //Da implementare
+    void setTime(int hour, int minute);
 };
 #endif //SERRA_H

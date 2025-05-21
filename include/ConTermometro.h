@@ -16,6 +16,6 @@ public:
     ConTermometro(const std::string &Nome, float tempAccensione, float tempSpegnimento);
     std::string Spegni() override;
     std::string Accendi(Time accensione) override;
-    void ChangeTime(Time now) override;
+    void OnTimeChanged(Time now) override;
 };
 #endif //CONTERMOMETRO_H

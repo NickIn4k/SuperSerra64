@@ -18,7 +18,7 @@ public:
     int getID() const;
     virtual std::string Accendi(Time accensione) = 0;
     virtual std::string Spegni() = 0;
-    virtual void ChangeTime(Time now) = 0;
+    virtual void OnTimeChanged(Time now) = 0;
     std::string Stampa() const;
     virtual ~Impianto() = default;
 };

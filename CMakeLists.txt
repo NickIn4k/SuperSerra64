@@ -13,5 +13,6 @@ add_library(Time STATIC ${SOURCE_DIR}/Time.cpp)
 add_library(Manuale STATIC ${SOURCE_DIR}/Manuale.cpp)
 add_library(Automatico STATIC ${SOURCE_DIR}/Automatico.cpp)
 add_library(ConTermometro STATIC ${SOURCE_DIR}/ConTermometro.cpp)
+add_library(UserInterface STATIC ${SOURCE_DIR}/UserInterface.cpp)
 
 add_executable(SuperSerra64 ${SOURCE_DIR}/main.cpp)

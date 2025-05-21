@@ -4,8 +4,19 @@
 Serra::Serra() : now(0, 0){}
 
 //Richiama il setter della classe Time che gestisce l’avanzamento minuto per minuto
-void Serra::AggiornaOrario(int hour, int minute) {
-    now.setTime(hour, minute);
+void Serra::AggiornaOrario(Time t) {
+    setTime(t.Hour, t.Minute);
+}
+
+//Aumento di uno alla volta i minuti => deve fare il check per ogni singolo impianto
+void Serra::setTime(int hour, int minute) {
+    if(hour > 23 || hour < 0 || minute > 59 || minute < 0)
+        throw std::invalid_argument("Invalid time");        //Solleva un'eccezione
+
+    while(now.Hour != hour || now.Minute != minute) {
+        now++;
+        //CHECK PER OGNI SINGOLO IMPIANTO CON IL METODO OnTimeChanged(now)
+    }
 }
 
 void Serra::AggiungiImpianto(std::unique_ptr<Impianto> nuovoImpianto) {
@@ -20,7 +31,7 @@ void Serra::RimuoviImpianto(int ID) {
     }
 }
 
-std::string Serra::SpegniImpiantoManuale(int ID) {
+std::string Serra::SpegniImpianto(int ID) {
 
 }
 

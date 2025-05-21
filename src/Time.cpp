@@ -5,29 +5,21 @@
 #define MIN 0
 #define MAX_M 60
 
-//Ciclo => aumenta l'ora di minuto in minuto la logica di accensione/spegnimento sarà in impianto
-void Time::setTime(int hour, int minutes) {
-    if(hour > MAX_H || hour < MIN || minutes > MAX_M || minutes < MIN)
-        throw std::invalid_argument("Invalid time");        //Solleva un'eccezione
-    while(this->hour != hour || this->minute != minutes)
-        (*this)++;
-}
-
 //getTime per l'output su comando
 std::string Time::getTime() const {
-    return std::to_string(this->hour) + ":" + std::to_string(this->minute);;
+    return std::to_string(this->Hour) + ":" + std::to_string(this->Minute);;
 }
 
 //Operator di incremento postfisso => obj++
 Time Time::operator++(int) {
     Time temp = *this;
-    this->minute++;
+    this->Minute++;
 
-    if(this->minute >= 60) {        //Caso hh:59
-        this->hour++;
-        this->minute = 0;
-        if(this->hour >= 24)        //Caso 00:00
-            this->hour = 0;
+    if(this->Minute >= 60) {        //Caso hh:59
+        this->Hour++;
+        this->Minute = 0;
+        if(this->Hour >= 24)        //Caso 00:00
+            this->Hour = 0;
     }
 
     return temp;
@@ -35,7 +27,7 @@ Time Time::operator++(int) {
 
 //Operator di uguaglianza
 bool Time::operator==(const Time &other) const {
-    return this->hour == other.hour && this->minute == other.minute;
+    return this->Hour == other.Hour && this->Minute == other.Minute;
 }
 
 int Time::DifferenzaMin(const Time &other) const {
@@ -50,4 +42,24 @@ int Time::DifferenzaMin(const Time &other) const {
 
 Time::Time() = default;
 
-Time::Time(int h, int min) : hour{h}, minute{min}{};
+Time::Time(int h, int min) : Hour{h}, Minute{min}{};
+
+// Costruttore da stringa formato HH:MM o H:M
+Time::Time(const std::string &token) {
+    auto pos = token.find(':');
+
+    if (pos == std::string::npos)
+        throw std::invalid_argument("Formato orario non valido: usare HH:MM");
+
+    std::string hours = token.substr(0, pos);
+    std::string minutes = token.substr(pos + 1);
+    int h, m;
+    h = std::stoi(hours);
+    m = std::stoi(minutes);
+
+    if (h < MIN || h > MAX_H || m < MIN || m > MAX_M)
+        throw std::invalid_argument("Valori orari fuori range: 0<=HH<=24, 0<=MM<=60");
+
+    this->Hour = h;
+    this->Minute = m;
+}

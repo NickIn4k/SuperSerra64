@@ -16,7 +16,7 @@ std::string ConTermometro::Accendi(Time now) override {
     return "Impianto acceso alle ore: " + now.getTime() + " con temperatura: " + std::to_string(cont);
 }
 
-void ConTermometro::ChangeTime(Time now) {
+void ConTermometro::OnTimeChanged(Time now) {
     int diffMin;
     if(!acceso) {
         cont-=randomFloat(0.01f, 0.05f);

@@ -22,7 +22,7 @@ std::string Automatico::Accendi(Time now) override{
     return "Impianto acceso alle ore: " + now.getTime();
 }
 
-void Automatico::ChangeTime(Time now) override {
+void Automatico::OnTimeChanged(Time now) override {
     if(!acceso && now == this->accensione)
         Accendi(now);
     else{

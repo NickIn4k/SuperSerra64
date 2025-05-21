@@ -13,7 +13,7 @@ std::string Manuale::Accendi(Time now) override{
     return "Impianto manuale acceso alle ore: " + now.getTime();
 }
 
-void Manuale::ChangeTime(Time now) {
+void Manuale::OnTimeChanged(Time now) {
     if(!acceso && now == this->accensione)
         Accendi(now);
     else if(acceso &&  now == this->spegnimento)
