@@ -23,3 +23,7 @@ void Serra::RimuoviImpianto(int ID) {
 std::string Serra::SpegniImpiantoManuale(int ID) {
 
 }
+
+void Serra::ResetTime() {
+    this->now = Time(0,0);
+}

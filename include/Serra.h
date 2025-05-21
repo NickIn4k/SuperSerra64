@@ -16,6 +16,7 @@ public:
     void AggiornaOrario(int hour, int minute);
     void AggiungiImpianto(std::unique_ptr<Impianto> nuovoImpianto);
     void RimuoviImpianto(int ID);
+    void ResetTime();
     std::string StampaStato() const;
     std::string SpegniImpiantoManuale(int ID);
 };
