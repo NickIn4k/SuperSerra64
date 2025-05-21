@@ -29,13 +29,22 @@ void Serra::AggiungiImpianto(std::unique_ptr<Impianto> nuovoImpianto) {
 
 void Serra::RimuoviImpianto(int ID) {
     //Se l'ID non esiste restituirà 0, altrimenti 1
-    if(this->impianti.erase(ID) == 0) {
+    if(this->impianti.erase(ID) == 0)
         throw std::invalid_argument("Invalid ID");      //Solleva un'eccezione
-    }
 }
 
-std::string Serra::SpegniImpianto(int ID) {
+std::string Serra::AccendiImpianto(const std::string& nome) {
+    Impianto* imp = getImpianto(nome);
+    if (imp == nullptr)
+        throw std::invalid_argument("Impianto non trovato");    //Solleva un'eccezione
+    return imp->Accendi(now);
+}
 
+std::string Serra::SpegniImpianto(const std::string& nome) {
+    Impianto* imp = getImpianto(nome);
+    if (imp == nullptr)
+        throw std::invalid_argument("Impianto non trovato");    //Solleva un'eccezione
+    return imp->Spegni();
 }
 
 void Serra::ResetTime() {
@@ -43,12 +52,11 @@ void Serra::ResetTime() {
 }
 
 //Ricerca di un impianto per nome
-Impianto* Serra::getImpianto(std::string nome) const {
+Impianto* Serra::getImpianto(const std::string& nome) const {
     for (auto it = impianti.begin(); it != impianti.end(); ++it) {
         const std::unique_ptr<Impianto>& ptr = it->second;
-        if (ptr->getNome() == nome) {
+        if (ptr->getNome() == nome)
             return ptr.get();
-        }
     }
     return nullptr;
 }
