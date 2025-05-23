@@ -13,7 +13,7 @@ protected:
 public:
     Automatico() = default;
     Automatico(const std::string &Nome, Time newTimer);
-    void SetTimer(Time newTimer);
+    void SetStop(Time newTimer);
     void SetStart(Time accensione);
     std::string Spegni() override;
     std::string Accendi(Time now) override;

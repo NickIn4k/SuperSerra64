@@ -2,7 +2,7 @@
 
 Automatico::Automatico(const std::string &Nome, Time newTimer): Impianto(Nome), timerSpegnimento{newTimer} {};
 
-void Automatico::SetTimer(Time newTimer) {
+void Automatico::SetStop(Time newTimer) {
     this->timerSpegnimento = newTimer;
 }
 

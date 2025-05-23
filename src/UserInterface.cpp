@@ -1,4 +1,5 @@
 #include "../include/UserInterface.h"
+#include "../include/Automatico.h"
 #include <iostream>
 #include <sstream>
 #include <stdexcept>
@@ -53,7 +54,7 @@ std::vector<std::string> UserInterface::commandParser(const std::string &command
 }
 
 
-void UserInterface::processCommand(const std::string &command, const Time &now, Serra serra) {
+void UserInterface::processCommand(const std::string &command, const Time &now, Serra &serra) {
     logMessage(now, "L'orario attuale è " + now.getTime(), 0);
     std::vector<std::string> tokens = commandParser(command);
 
@@ -76,6 +77,7 @@ void UserInterface::processCommand(const std::string &command, const Time &now, 
             }
             Time time{tokens[2]};
             serra.AggiornaOrario(time);
+            logMessage(now, "Aggiornamento orario (minuto per minuto)", 0);
         } else {
             if (tokens.size() < 3) {
                 throw std::invalid_argument("Errore: comando 'set' incompleto per dispositivo.");
@@ -83,19 +85,29 @@ void UserInterface::processCommand(const std::string &command, const Time &now, 
 
             const std::string &operation = tokens[2];
 
+            Impianto* imp = serra.getImpianto(deviceName);
+            if(!imp)
+                throw std::invalid_argument("Errore: l'impianto non esiste!");
+
             if (operation == "on") {
-                //metodo per accendere il dispositivo {deviceName};
+                logMessage(now, imp->Accendi(now), 0);
             } else if (operation == "off") {
-                //metodo per spegnere il dispositivo {deviceName};
+                logMessage(now, imp->Spegni(),0);
             } else {
                 Time start{operation};
+                Automatico* autoImp = dynamic_cast<Automatico*>(imp);
+                if (!autoImp)
+                    throw std::invalid_argument(deviceName + " non supporta la programmazione temporale.");
+
                 if (tokens.size() == 4) {
                     Time stop{tokens[3]};
-                    //metodo per settare il timer {start} e {stop} per il dispositivo {deviceName};
+                    autoImp->SetStop(stop);
+                    autoImp->SetStart(start);
+                    logMessage(now, "Timer di "+ deviceName + " impostati a: "+ start.getTime()+" - " + stop.getTime(), 0);
                 } else {
-                    //metodo per settare il timer {start} per il dispositivo {deviceName};
+                    autoImp->SetStart(start);
+                    logMessage(now, "Timer di accensione di "+ deviceName + " impostato a: "+ start.getTime(), 0);
                 }
-
             }
         }
 
@@ -103,12 +115,13 @@ void UserInterface::processCommand(const std::string &command, const Time &now, 
         if (tokens.size() != 2) {
             throw std::invalid_argument("Errore: comando 'rm' non valido. Usa: rm ${DEVICENAME}");
         }
-        //metodo per rimuovere il timer
+        //metodo per rimuovere il timer => Nella consegna non è spiegato.
     } else if (action == "show") {
         if (tokens.size() == 1) {
-        serra.StampaStato();
+        logMessage(now, serra.StampaStato(), 0);
         } else if (tokens.size() == 2) {
-            //metodo per mostrare impianto specifico
+            const std::string &deviceName = tokens[1];
+            logMessage(now, serra.getImpianto(deviceName)->Stampa(), 0);
         } else {
             throw std::invalid_argument("Errore: comando 'show' non valido. Usa: show oppure show ${DEVICENAME}");
         }
@@ -121,10 +134,13 @@ void UserInterface::processCommand(const std::string &command, const Time &now, 
         const std::string &resetType = tokens[1];
         if (resetType == "time") {
             serra.ResetTime();
+            logMessage(now, "Tempo della serra resettato a 00:00", 0);
         } else if (resetType == "timers") {
-            //metodo per resettare i timer
+            logMessage(now,serra.ResetAllTimers(),0);
         } else if (resetType == "all") {
-            //metodo per resettare tempo e timer
+            logMessage(now,serra.ResetAllTimers(),0);
+            serra.ResetTime();
+            logMessage(now, "Tempo della serra resettato a 00:00", 0);
         } else {
             throw std::invalid_argument(
                     "Errore: opzione 'reset' non valida. Usa: reset time | reset timers | reset all");
