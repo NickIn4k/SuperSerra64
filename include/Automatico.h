@@ -9,7 +9,7 @@ private:
     Time contatore;
 protected:
     Time timerSpegnimento;
-    Time accensione;
+    Time timerAccensione;
 public:
     Automatico() = default;
     Automatico(const std::string &Nome, Time newTimer);
@@ -18,6 +18,6 @@ public:
     std::string Spegni() override;
     std::string Accendi(Time now) override;
     void OnTimeChanged(Time now) override;
-    void ResetTimers(); //Da implementare
+    void ResetTimers() override;
 };
 #endif //AUTOMATICO_H

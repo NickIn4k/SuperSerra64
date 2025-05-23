@@ -16,10 +16,10 @@ public:
     void AggiornaOrario(Time t);
     void AggiungiImpianto(std::unique_ptr<Impianto> nuovoImpianto);
     void RimuoviImpianto(int ID);
+    void setTime(int hour, int minute);
     void ResetTime();
     std::string StampaStato() const;
-    std::string ResetAllTimers();   //Da implementare
-    void setTime(int hour, int minute);
+    std::string ResetAllTimers();
     Impianto* getImpianto(const std::string& nome) const;
     std::string AccendiImpianto(const std::string& nome);
     std::string SpegniImpianto(const std::string& nome);

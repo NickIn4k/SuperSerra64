@@ -7,7 +7,7 @@ void Automatico::SetTimer(Time newTimer) {
 }
 
 void Automatico::SetStart(Time accensione) {
-    this->accensione = accensione;
+    this->timerAccensione = accensione;
 }
 
 std::string Automatico::Spegni() override {
@@ -23,7 +23,7 @@ std::string Automatico::Accendi(Time now) override{
 }
 
 void Automatico::OnTimeChanged(Time now) override {
-    if(!acceso && now == this->accensione)
+    if(!acceso && now == this->timerAccensione)
         Accendi(now);
     else{
         contatore++;
@@ -31,3 +31,9 @@ void Automatico::OnTimeChanged(Time now) override {
             Spegni();
     }
 }
+
+void Automatico::ResetTimers() {
+    this->timerSpegnimento = Time(0,0);
+    this->timerAccensione = Time(0,0);
+}
+

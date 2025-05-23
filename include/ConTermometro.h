@@ -17,5 +17,6 @@ public:
     std::string Spegni() override;
     std::string Accendi(Time accensione) override;
     void OnTimeChanged(Time now) override;
+    void ResetTimers() override;
 };
 #endif //CONTERMOMETRO_H

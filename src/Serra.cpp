@@ -60,3 +60,9 @@ Impianto* Serra::getImpianto(const std::string& nome) const {
     }
     return nullptr;
 }
+
+std::string Serra::ResetAllTimers() {
+    for (auto imp = impianti.begin(); imp != impianti.end(); ++imp)
+        imp->second->ResetTimers();
+    return "Timer di tutti gli impianti azzerati.";
+}

@@ -33,7 +33,11 @@ void ConTermometro::OnTimeChanged(Time now) {
     ultimoAggiornamento = now;
 }
 
+// Questo metodo non serve in questa classe => non c'è un timer da resettare!
+void::ConTermometro::ResetTimers(){}
+
 float randomFloat(float min, float max)
 {
     return min + ((float)rand() /(float)RAND_MAX) * (max - min);
 }
+
