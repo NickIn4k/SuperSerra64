@@ -66,3 +66,7 @@ std::string Serra::ResetAllTimers() {
         imp->second->ResetTimers();
     return "Timer di tutti gli impianti azzerati.";
 }
+
+Time Serra::getNow() const {
+    return this->now;
+}

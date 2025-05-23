@@ -18,6 +18,7 @@ public:
     void RimuoviImpianto(int ID);
     void setTime(int hour, int minute);
     void ResetTime();
+    Time getNow() const;
     std::string StampaStato() const;
     std::string ResetAllTimers();
     Impianto* getImpianto(const std::string& nome) const;
