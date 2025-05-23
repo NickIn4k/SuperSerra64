@@ -5,8 +5,14 @@
 #include <stdexcept>
 
 void UserInterface::logMessage(const Time &time, const std::string &message, const int &errorLevel) {
-    if (errorLevel == 0)
-        std::cout << "[" << time.getTime() << "]\t" << message << std::endl;
+    openFile();
+    if (errorLevel == 0) {
+        std::string msg = "[" + time.getTime() + "]\t" + message + "\n";
+        std::cout << msg;
+
+        if (logFile.is_open())
+            logFile << msg << std::endl;
+    }
     else if (errorLevel == 1)
         std::cerr << "[" << time.getTime() << "]\t" << message << std::endl;
 }
@@ -55,7 +61,7 @@ std::vector<std::string> UserInterface::commandParser(const std::string &command
 
 
 void UserInterface::processCommand(const std::string &command, const Time &now, Serra &serra) {
-    logMessage(now, "L'orario attuale è " + now.getTime(), 0);
+    logMessage(now, "L'orario attuale e' " + now.getTime(), 0);
     std::vector<std::string> tokens = commandParser(command);
 
     if (tokens.empty()) {
@@ -148,4 +154,19 @@ void UserInterface::processCommand(const std::string &command, const Time &now, 
     } else {
         throw std::invalid_argument("Errore: comando '" + action + "' non riconosciuto.");
     }
+}
+
+void UserInterface::openFile() {
+    if (!logFile.is_open()) {
+        logFile.open("serra_log.txt", std::ios::app); //std::ios::app => append del testo
+        if (!logFile)
+             throw std::invalid_argument("Errore: logFile non valido.");
+    }
+}
+
+std::ofstream UserInterface::logFile;
+
+void UserInterface::closeFile() {
+    if (logFile.is_open())
+        logFile.close();
 }

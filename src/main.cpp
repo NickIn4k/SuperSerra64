@@ -56,9 +56,9 @@ int main() {
         }
         superSerra.AggiungiImpianto(std::move(impianto));
 
-        cout << "Vuoi continuare ad aggiungere impianti? (sì/no): ";
+        cout << "Vuoi continuare ad aggiungere impianti? (si'/no): ";
         cin >> risposta;
-    } while (risposta == "sì" || risposta == "si");
+    } while (risposta == "si'" || risposta == "si");
 
     // Inserimento comandi
     cin.ignore();  // Pulisci possibili linee rimaste
@@ -68,11 +68,12 @@ int main() {
         std::getline(cin, comando);
         ui.processCommand(comando, superSerra.getNow(), superSerra);
 
-        cout << "Vuoi terminare il programma? (sì/no): ";
+        cout << "Vuoi terminare il programma? (si'/no): ";
         cin >> risposta;
         cin.ignore();
     } while (risposta == "no" || risposta == "n");
 
+    ui.closeFile();
     cout << "Programma terminato.\n";
     return 0;
 }
