@@ -10,7 +10,7 @@ private:
 protected:
     float tempAccensione;
     float tempSpegnimento;
-    float randomFloat(float min, float max);
+    float randomFloat(float min, float max) const;
 public:
     ConTermometro() = default;
     ConTermometro(const std::string &Nome, float tempAccensione, float tempSpegnimento);

@@ -10,15 +10,14 @@
 
 using std::cout;
 using std::cin;
-using std::string;
 
 int main() {
     Serra superSerra;
     UserInterface ui;
     std::unique_ptr<Impianto> impianto;
-    string risposta;
+    std::string risposta;
 
-    // 1) Ciclo di creazione impianti
+    // Creazione impianti
     do {
         cout << "\n--- MENU CREAZIONE IMPIANTO ---\n"
              << "1. Con Termometro\n"
@@ -30,25 +29,30 @@ int main() {
 
         cout << "Nome impianto: ";
         cin.ignore();
-        string nome;
-        std::getline(cin, nome);
+        std::string nome;
+        cin >> nome;
 
         if (scelta == 1) {
             float tempAcc, tempSpegn;
-            cout << "Temperatura accensione: "; cin >> tempAcc;
-            cout << "Temperatura spegnimento: "; cin >> tempSpegn;
+            cout << "Temperatura accensione: ";
+            cin >> tempAcc;
+            cout << "Temperatura spegnimento: ";
+            cin >> tempSpegn;
             impianto = std::make_unique<ConTermometro>(nome, tempAcc, tempSpegn);
         }
         else if (scelta == 2) {
             int hStart, mStart, hStop, mStop;
-            cout << "Accensione (h m): "; cin >> hStart >> mStart;
-            cout << "Spegnimento (h m): "; cin >> hStop >> mStop;
+            cout << "Accensione (h : m): ";
+            cin >> hStart >> mStart;
+            cout << "Spegnimento (h : m): ";
+            cin >> hStop >> mStop;
             impianto = std::make_unique<Manuale>(nome, Time(hStart,mStart), Time(hStop,mStop));
         }
         else if (scelta == 3) {
-            int hT, mT;
-            cout << "Durata timer (h m): "; cin >> hT >> mT;
-            impianto = std::make_unique<Automatico>(nome, Time(hT,mT));
+            int hourTimer, minuteTimer;
+            cout << "Durata timer (h m): ";
+            cin >> hourTimer >> minuteTimer;
+            impianto = std::make_unique<Automatico>(nome, Time(hourTimer,minuteTimer));
         }
         superSerra.AggiungiImpianto(std::move(impianto));
 
@@ -56,11 +60,11 @@ int main() {
         cin >> risposta;
     } while (risposta == "sì" || risposta == "si");
 
-    // 2) Ciclo di inserimento comandi
-    cin.ignore();  // pulisci il newline rimasto
+    // Inserimento comandi
+    cin.ignore();  // Pulisci possibili linee rimaste
     do {
         cout << "\nInserisci comando: ";
-        string comando;
+        std::string comando;
         std::getline(cin, comando);
         ui.processCommand(comando, superSerra.getNow(), superSerra);
 

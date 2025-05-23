@@ -10,19 +10,19 @@ void Automatico::SetStart(Time accensione) {
     this->timerAccensione = accensione;
 }
 
-std::string Automatico::Spegni() override {
+std::string Automatico::Spegni() {
     this->contatore = Time(0,0);
     acceso = false;
     return "Impianto spento automaticamente";
 }
 
-std::string Automatico::Accendi(Time now) override{
+std::string Automatico::Accendi(Time now) {
     this->acceso = true;
     this->ultimaAccensione = now;
     return "Impianto acceso alle ore: " + now.getTime();
 }
 
-void Automatico::OnTimeChanged(Time now) override {
+void Automatico::OnTimeChanged(Time now) {
     if(!acceso && now == this->timerAccensione)
         Accendi(now);
     else{

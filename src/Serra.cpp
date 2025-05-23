@@ -1,4 +1,4 @@
-#include "../include/Serra.h"
+#include <Serra.h>
 
 //Costruttore che inizializza il tempo a 0:0
 Serra::Serra() : now(0, 0){}
@@ -40,7 +40,7 @@ std::string Serra::AccendiImpianto(const std::string& nome) {
     return imp->Accendi(now);
 }
 
-std::string Serra::SpegniImpianto(const std::string& nome) {
+std::string Serra::SpegniImpianto(const std::string& nome) const {
     Impianto* imp = getImpianto(nome);
     if (imp == nullptr)
         throw std::invalid_argument("Impianto non trovato");    //Solleva un'eccezione
@@ -69,4 +69,11 @@ std::string Serra::ResetAllTimers() {
 
 Time Serra::getNow() const {
     return this->now;
+}
+
+std::string Serra::StampaStato() const {
+    std::string msg = "";
+    for (auto it = impianti.begin(); it != impianti.end(); ++it)
+        msg+= it->second->Stampa() + "\n";
+    return msg;
 }

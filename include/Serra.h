@@ -23,6 +23,6 @@ public:
     std::string ResetAllTimers();
     Impianto* getImpianto(const std::string& nome) const;
     std::string AccendiImpianto(const std::string& nome);
-    std::string SpegniImpianto(const std::string& nome);
+    std::string SpegniImpianto(const std::string& nome) const;
 };
 #endif //SERRA_H

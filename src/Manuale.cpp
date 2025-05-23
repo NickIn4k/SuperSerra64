@@ -2,12 +2,12 @@
 
 Manuale::Manuale(const std::string &Nome, Time Accensione, Time Spegnimento): Impianto(Nome), timerAccensione{Accensione}, timerSpegnimento{Spegnimento}{};
 
-std::string Manuale::Spegni() override {
+std::string Manuale::Spegni() {
     this->acceso = false;
     return "Impianto manuale spento alle ore: " + timerSpegnimento.getTime();
 }
 
-std::string Manuale::Accendi(Time now) override{
+std::string Manuale::Accendi(Time now) {
     this->acceso = true;
     this->ultimaAccensione = now;
     return "Impianto manuale acceso alle ore: " + now.getTime();

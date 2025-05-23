@@ -16,3 +16,13 @@ add_library(ConTermometro STATIC ${SOURCE_DIR}/ConTermometro.cpp)
 add_library(UserInterface STATIC ${SOURCE_DIR}/UserInterface.cpp)
 
 add_executable(SuperSerra64 ${SOURCE_DIR}/main.cpp)
+
+target_link_libraries(SuperSerra64
+        Serra
+        Impianto
+        Time
+        Manuale
+        Automatico
+        ConTermometro
+        UserInterface
+)
