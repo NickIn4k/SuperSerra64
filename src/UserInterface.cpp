@@ -133,9 +133,8 @@ void UserInterface::processCommand(const std::string &command, const Time &now, 
         }
 
     } else if (action == "reset") {
-        if (tokens.size() != 2) {
+        if (tokens.size() != 2)
             throw std::invalid_argument("Errore: comando 'reset' non valido.");
-        }
 
         const std::string &resetType = tokens[1];
         if (resetType == "time") {
@@ -158,13 +157,14 @@ void UserInterface::processCommand(const std::string &command, const Time &now, 
 
 void UserInterface::openFile() {
     if (!logFile.is_open()) {
-        logFile.open("serra_log.txt", std::ios::app); //std::ios::app => append del testo
+        logFile.open(logFilePath, std::ios::app); //std::ios::app => append del testo
         if (!logFile)
              throw std::invalid_argument("Errore: logFile non valido.");
     }
 }
 
 std::ofstream UserInterface::logFile;
+std::string UserInterface::logFilePath = "../log/logFile.txt";
 
 void UserInterface::closeFile() {
     if (logFile.is_open())

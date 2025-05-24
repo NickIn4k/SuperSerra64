@@ -9,6 +9,7 @@
 class UserInterface{
 private:
     static std::ofstream logFile;
+    static std::string logFilePath;
     static void openFile();
 public:
     static void logMessage(const Time &time, const std::string &message, const int &errorLevel);

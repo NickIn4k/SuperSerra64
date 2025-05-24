@@ -58,7 +58,7 @@ Time::Time(const std::string &token) {
     m = std::stoi(minutes);
 
     if (h < MIN || h > MAX_H || m < MIN || m > MAX_M)
-        throw std::invalid_argument("Valori orari fuori range: 0<=HH<=24, 0<=MM<=60");
+        throw std::invalid_argument("Valori orari fuori range: 0 <= HH <24, 0 <= MM < 60");
 
     this->Hour = h;
     this->Minute = m;
