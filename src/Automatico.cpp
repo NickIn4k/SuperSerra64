@@ -1,4 +1,4 @@
-#include "../include/Automatico.h"
+#include "Automatico.h"
 
 Automatico::Automatico(const std::string &Nome, Time newTimer): Impianto(Nome), timerSpegnimento{newTimer} {};
 

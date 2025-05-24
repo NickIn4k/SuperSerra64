@@ -1,4 +1,4 @@
-#include "../include/Impianto.h"
+#include "Impianto.h"
 
 Impianto::Impianto(const std::string &n) : nome{n}, acceso{false} {
     ID = contId++;

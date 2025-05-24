@@ -1,4 +1,4 @@
-#include "../include/Manuale.h"
+#include "Manuale.h"
 
 Manuale::Manuale(const std::string &Nome, Time Accensione, Time Spegnimento): Impianto(Nome), timerAccensione{Accensione}, timerSpegnimento{Spegnimento}{};
 

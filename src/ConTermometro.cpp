@@ -1,4 +1,4 @@
-#include "../include/ConTermometro.h"
+#include "ConTermometro.h"
 
 ConTermometro::ConTermometro(const std::string &Nome, float tempAccensione, float tempSpegnimento): Impianto(Nome), tempAccensione{tempAccensione}, tempSpegnimento {tempSpegnimento} {
     cont = 20.0;

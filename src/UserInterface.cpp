@@ -1,5 +1,5 @@
-#include "../include/UserInterface.h"
-#include "../include/Automatico.h"
+#include "UserInterface.h"
+#include "Automatico.h"
 #include <iostream>
 #include <sstream>
 #include <stdexcept>
