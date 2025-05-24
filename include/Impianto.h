@@ -2,7 +2,7 @@
 #ifndef IMPIANTO_H
 #define IMPIANTO_H
 #include <string>
-#include "../include/Time.h"
+#include "Time.h"
 
 class Impianto {
 protected:

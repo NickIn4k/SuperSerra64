@@ -4,17 +4,18 @@
 
 #include <map>
 #include <memory>
-#include "../include/Impianto.h"
-#include "../include/Time.h"
+#include "Impianto.h"
+#include "Time.h"
 
+// Classe Serra: gestisce un insieme di impianti e l'orario corrente
 class Serra {
 private:
     std::map<int, std::unique_ptr<Impianto>> impianti;
     Time now;
 public:
     Serra();
-    void AggiornaOrario(Time t);
-    void AggiungiImpianto(std::unique_ptr<Impianto> nuovoImpianto);
+    void AggiornaOrario(Time t); // Imposta un nuovo orario
+    void AggiungiImpianto(std::unique_ptr<Impianto> nuovoImpianto); // Aggiunge un nuovo impianto
     void RimuoviImpianto(int ID);
     void setTime(int hour, int minute);
     void ResetTime();
