@@ -1,8 +1,8 @@
 #ifndef MANUALE_H
 #define MANUALE_H
 #include <string>
-#include "../include/Time.h"
-#include "../include/Impianto.h"
+#include "Time.h"
+#include "Impianto.h"
 
 class Manuale: public Impianto {
 protected:

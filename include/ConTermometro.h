@@ -1,7 +1,7 @@
 #ifndef CONTERMOMETRO_H
 #define CONTERMOMETRO_H
-#include "../include/Impianto.h"
-#include "../include/Time.h"
+#include "Impianto.h"
+#include "Time.h"
 
 class ConTermometro: public Impianto {
 private:

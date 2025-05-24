@@ -1,8 +1,8 @@
 #ifndef AUTOMATICO_H
 #define AUTOMATICO_H
 #include <string>
-#include "../include/Time.h"
-#include "../include/Impianto.h"
+#include "Time.h"
+#include "Impianto.h"
 
 class Automatico: public Impianto {
 private:

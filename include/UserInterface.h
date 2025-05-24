@@ -3,8 +3,8 @@
 #include <string>
 #include <vector>
 #include <fstream>
-#include "../include/Time.h"
-#include "../include/Serra.h"
+#include "Time.h"
+#include "Serra.h"
 
 class UserInterface{
 private:
