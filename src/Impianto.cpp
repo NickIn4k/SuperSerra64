@@ -18,11 +18,7 @@ std::string Impianto::getNome() const {
 //Restituisce una stringa con le info principali dell’impianto
 std::string Impianto::Stampa() const{
     std::string stato = acceso ? "ACCESO" : "SPENTO";
-
-    return "Impianto: " + nome + "\n"
-         + "ID: " + std::to_string(ID) + "\n"
-         + "Stato: " + stato + "\n"
-         + "Ultima accensione: " + ultimaAccensione.getTime();
+    return "Impianto: " + nome +", ID: " + std::to_string(ID) + ", Stato: " + stato +", Ultima accensione: " + ultimaAccensione.getTime();
 }
 
 //Var static

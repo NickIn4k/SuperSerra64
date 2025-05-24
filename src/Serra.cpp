@@ -36,14 +36,14 @@ void Serra::RimuoviImpianto(int ID) {
 std::string Serra::AccendiImpianto(const std::string& nome) {
     Impianto* imp = getImpianto(nome);
     if (imp == nullptr)
-        throw std::invalid_argument("Impianto non trovato");    //Solleva un'eccezione
+        throw std::invalid_argument("Impianto non trovato");    // Solleva un'eccezione
     return imp->Accendi(now);
 }
 
 std::string Serra::SpegniImpianto(const std::string& nome) const {
     Impianto* imp = getImpianto(nome);
     if (imp == nullptr)
-        throw std::invalid_argument("Impianto non trovato");    //Solleva un'eccezione
+        throw std::invalid_argument("Impianto non trovato");    // Solleva un'eccezione
     return imp->Spegni();
 }
 
@@ -51,7 +51,7 @@ void Serra::ResetTime() {
     this->now = Time(0,0);
 }
 
-//Ricerca di un impianto per nome
+// Ricerca di un impianto per nome
 Impianto* Serra::getImpianto(const std::string& nome) const {
     for (auto it = impianti.begin(); it != impianti.end(); ++it) {
         const std::unique_ptr<Impianto>& ptr = it->second;
