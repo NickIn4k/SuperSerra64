@@ -172,8 +172,8 @@ void UserInterface::processCommand(const std::string &command, const Time &now, 
         const std::string commands = R"(Comandi disponibili:
         set <NOME> on              - Accende l'impianto manuale
         set <NOME> off             - Spegne l'impianto manuale
-        set <NOME> <START>         - Imposta l'accensione automatica di un impianto manuale
-        set <NOME> <START> <STOP>  - Imposta l'accensione e lo speginmento dell'impianto automatico
+        set <NOME> <START>         - Imposta l'orario di accensione di un impianto automatico
+        set <NOME> <START> <STOP>  - Imposta l'accensione e lo spegnimento dell'impianto automatico
         rm <ID>                    - Rimuove l'impianto
         show                       - Mostra lo stato e consumo di tutti gli impianti
         show <NOME>                - Mostra lo stato e i dettagli di un impianto
@@ -182,6 +182,7 @@ void UserInterface::processCommand(const std::string &command, const Time &now, 
         reset timers               - Rimuove tutti i timer mantenendo lo stato attuale
         reset all                  - Resetta orario, timer e spegne tutti gli impianti
         exit                       - Termina l'esecuzione
+        help                       - Mostra tutti i comandi possibili
         )";
         logMessage(now, commands, 0);
     } else if(action == "exit") {
