@@ -44,3 +44,7 @@ void Automatico::ResetTimers() {
     this->orarioAccensione = Time(0,0);
 }
 
+std::string Automatico::Stampa() const {
+    std::string stato = acceso ? "ACCESO" : "SPENTO";
+    return "Impianto: " + nome +", ID: " + std::to_string(ID) + ", Stato: " + stato + ", Orario accensione: " + orarioAccensione.getTime()+ ", Timer di: " + timerSpegnimento.getTime() + ", Ultima accensione: " + ultimaAccensione.getTime();
+}

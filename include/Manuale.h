@@ -15,5 +15,6 @@ public:
     std::string Accendi(Time now) override;
     std::string OnTimeChanged(Time now) override;
     void ResetTimers() override;
+    std::string Stampa() const override; // Restituisce le informazioni dell'impianto
 };
 #endif //MANUALE_H

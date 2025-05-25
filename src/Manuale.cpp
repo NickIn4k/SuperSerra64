@@ -30,3 +30,8 @@ void Manuale::ResetTimers() {
     this->timerSpegnimento = Time(0,0);
     this->timerAccensione = Time(0,0);
 }
+
+std::string Manuale::Stampa() const {
+    std::string stato = acceso ? "ACCESO" : "SPENTO";
+    return "Impianto: " + nome +", ID: " + std::to_string(ID) + ", Stato: " + stato + ", Orario accensione: " + timerAccensione.getTime()+ ", Orario spegnimento: " + timerSpegnimento.getTime() + ", Ultima accensione: " + ultimaAccensione.getTime();
+}

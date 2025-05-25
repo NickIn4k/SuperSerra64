@@ -1679,3 +1679,33 @@ Impianto: t2, ID: 1, Stato: ACCESO, Ultima accensione: 0:1
 
 [10:30]	Impianto: t1, ID: 0, Stato: ACCESO, Ultima accensione: 0:1
 
+[0:0]	Orario del comando: 0:0
+
+[0:0]	Impianto: t1, ID: 0, Stato: SPENTO, Temperatura di accensione: 30.000000, Temperatura di spegnimento: 31.000000, Ultima accensione: -1:-1
+
+[0:0]	Impianto: m1, ID: 1, Stato: SPENTO, Orario accensione: 1:0, Orario spegnimento: 1:30, Ultima accensione: -1:-1
+
+[0:0]	Impianto: a1, ID: 2, Stato: SPENTO, Orario accensione: 0:0, Timer di: 1:30, Ultima accensione: -1:-1
+
+[0:0]	Orario del comando: 0:0
+
+[0:1]	Impianto t1 acceso con temperatura: 27.989950
+
+[0:0]	Aggiornamento orario (minuto per minuto)
+
+[0:10]	Orario del comando: 0:10
+
+[0:0]	Orario del comando: 0:0
+
+[0:1]	Impianto t1 acceso con temperatura: 27.989950
+
+[0:0]	Aggiornamento orario (minuto per minuto)
+
+[0:1]	Orario del comando: 0:1
+
+[0:1]	Aggiornamento orario (minuto per minuto)
+
+[10:0]	Orario del comando: 10:0
+
+[10:0]	Impianto: t1, ID: 0, Stato: ACCESO, Temperatura di accensione: 30.000000, Temperatura di spegnimento: 32.000000, Ultima accensione: 0:1
+

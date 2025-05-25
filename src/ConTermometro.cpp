@@ -61,3 +61,7 @@ float ConTermometro::randomFloat(float min, float max) const {
     return min + ((float)rand() /(float)RAND_MAX) * (max - min);
 }
 
+std::string ConTermometro::Stampa() const {
+    std::string stato = acceso ? "ACCESO" : "SPENTO";
+    return "Impianto: " + nome +", ID: " + std::to_string(ID) + ", Stato: " + stato + ", Temperatura di accensione: " + std::to_string(tempAccensione) + ", Temperatura di spegnimento: " + std::to_string(tempSpegnimento) + ", Temperatura attuale: " + std::to_string(tempAttuale) + ", Ultima accensione: " + ultimaAccensione.getTime();
+}

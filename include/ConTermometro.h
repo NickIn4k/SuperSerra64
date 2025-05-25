@@ -18,5 +18,6 @@ public:
     std::string Accendi(Time accensione) override;
     std::string OnTimeChanged(Time now) override;
     void ResetTimers() override;
+    std::string Stampa() const override; // Restituisce le informazioni dell'impianto
 };
 #endif //CONTERMOMETRO_H

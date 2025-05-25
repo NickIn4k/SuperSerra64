@@ -20,7 +20,7 @@ public:
     virtual std::string Spegni() = 0;                // Spegne l'impianto
     virtual std::string OnTimeChanged(Time now) = 0;       // Aggiornamento periodico con il tempo corrente
     virtual void ResetTimers() = 0;                // Reset dei timer interni
-    std::string Stampa() const;                   // Restituisce le informazioni dell'impianto
+    virtual std::string Stampa() const = 0;                   // Restituisce le informazioni dell'impianto
 
     virtual ~Impianto() = default;             // Distruttore virtuale
 };
