@@ -8,6 +8,7 @@ void Serra::AggiornaOrario(Time t) {
     setTime(t.Hour, t.Minute);
 }
 
+//DA FINIRE
 //Aumento di uno alla volta i minuti => deve fare il check per ogni singolo impianto
 void Serra::setTime(int hour, int minute) {
     if(hour > 23 || hour < 0 || minute > 59 || minute < 0)
@@ -48,6 +49,7 @@ std::string Serra::SpegniImpianto(const std::string& nome) const {
 }
 
 void Serra::ResetTime() {
+    //DEVE SPEGNERE OGNI IMPIANTO ANCORA
     this->now = Time(0,0);
 }
 
@@ -71,6 +73,7 @@ Time Serra::getNow() const {
     return this->now;
 }
 
+//DA FINIRE
 std::string Serra::StampaStato() const {
     std::string msg = "";
     for (auto it = impianti.begin(); it != impianti.end(); ++it)
