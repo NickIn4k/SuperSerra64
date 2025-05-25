@@ -6,21 +6,22 @@
 
 class Impianto {
 protected:
-    static int contId;
-    int ID;
-    std::string nome;
-    bool acceso; //True = acceso, false = spento
-    Time ultimaAccensione;
+    static int contId;               // Contatore statico per assegnare ID univoci
+    int ID;                         // Identificatore univoco dell'impianto
+    std::string nome;              // Nome dell'impianto
+    bool acceso;                  //Stato dell'impianto: true = acceso, false = spento
+    Time ultimaAccensione;       // Ora dell'ultima accensione
 public:
     Impianto() = default;
     explicit Impianto(const std::string &Nome);
-    int getID() const;
-    std::string getNome() const;
-    virtual std::string Accendi(Time accensione) = 0;
-    virtual std::string Spegni() = 0;
-    virtual void OnTimeChanged(Time now) = 0;
-    virtual void ResetTimers() = 0;
-    std::string Stampa() const;
-    virtual ~Impianto() = default;
+    int getID() const;                              //Restituisce l'ID
+    std::string getNome() const;                    // Restituisce il nome
+    virtual std::string Accendi(Time accensione) = 0; // Accende l'impianto
+    virtual std::string Spegni() = 0;                // Spegne l'impianto
+    virtual void OnTimeChanged(Time now) = 0;       // Aggiornamento periodico con il tempo corrente
+    virtual void ResetTimers() = 0;                // Reset dei timer interni
+    std::string Stampa() const;                   // Restituisce le informazioni dell'impianto
+
+    virtual ~Impianto() = default;             // Distruttore virtuale
 };
 #endif //IMPIANTO_H

@@ -4,18 +4,20 @@
 #include <sstream>
 #include <stdexcept>
 
+// Logga un messaggio sulla console e nel file di log (solo se errorLevel == 0)
 void UserInterface::logMessage(const Time &time, const std::string &message, const int &errorLevel) {
-    openFile();
+    openFile();         // Assicura che il file sia aperto prima di scrivere
     if (errorLevel == 0) {
         std::string msg = "[" + time.getTime() + "]\t" + message + "\n";
         std::cout << msg;
 
         if (logFile.is_open())
-            logFile << msg << std::endl;
+            logFile << msg << std::endl;    // Scrive anche su file
     } else if (errorLevel == 1)
         std::cerr << "[" << time.getTime() << "]\t" << message << std::endl;
 }
 
+// Divide un comando testuale in token, gestendo i nomi dispositivo composti
 std::vector<std::string> UserInterface::commandParser(const std::string &command) {
     std::vector<std::string> tokens;
     std::istringstream ss(command);
@@ -26,6 +28,7 @@ std::vector<std::string> UserInterface::commandParser(const std::string &command
 
     while (ss >> token) {
         if (isDeviceName) {
+            // Se troviamo "on", "off" o orari, termina il nome del dispositivo
             if (token == "on" || token == "off" || token.find(':') != std::string::npos) {
                 if (!deviceName.empty()) {
                     tokens.push_back(deviceName);
@@ -34,13 +37,13 @@ std::vector<std::string> UserInterface::commandParser(const std::string &command
                 isDeviceName = false;
             }
         }
-
+        // Comandi che indicano che il prossimo token sarà un nome composto
         if (token == "set" || token == "rm" || token == "show") {
             tokens.push_back(token);
             isDeviceName = true;
             continue;
         }
-
+        // Ricostruisce nomi di dispositivi con spazi
         if (isDeviceName) {
             if (!deviceName.empty()) {
                 deviceName += " ";
@@ -58,7 +61,7 @@ std::vector<std::string> UserInterface::commandParser(const std::string &command
     return tokens;
 }
 
-
+// Esegue un comando interpretando i token e interagendo con Serra
 void UserInterface::processCommand(const std::string &command, const Time &now, Serra &serra) {
     logMessage(now, "Orario del comando: " + now.getTime(), 0);
     std::vector<std::string> tokens = commandParser(command);
@@ -77,13 +80,15 @@ void UserInterface::processCommand(const std::string &command, const Time &now, 
         const std::string &deviceName = tokens[1];
 
         if (deviceName == "time") {
+            // Comando: set time HH:MM
             if (tokens.size() != 3) {
                 throw std::invalid_argument("Errore: formato per 'set time' non valido. Usa: set time HH:MM");
             }
             Time time{tokens[2]};
-            serra.AggiornaOrario(time);
+            serra.AggiornaOrario(time);    // Simula avanzamento minuto per minuto
             logMessage(now, "Aggiornamento orario (minuto per minuto)", 0);
         } else {
+            // Comando: set <device> on/off oppure programmazione oraria
             if (tokens.size() < 3) {
                 throw std::invalid_argument("Errore: comando 'set' incompleto per dispositivo.");
             }
@@ -99,6 +104,7 @@ void UserInterface::processCommand(const std::string &command, const Time &now, 
             } else if (operation == "off") {
                 logMessage(now, imp->Spegni(), 0);
             } else {
+                // Comando con timer: set <device> HH:MM oppure HH:MM HH:MM
                 Time start{operation};
                 Automatico *autoImp = dynamic_cast<Automatico *>(imp);
                 if (!autoImp)
@@ -117,6 +123,7 @@ void UserInterface::processCommand(const std::string &command, const Time &now, 
             }
         }
     } else if (action == "rm") {
+        // Rimozione di un impianto tramite ID
         if (tokens.size() != 2) {
             throw std::invalid_argument("Errore: comando 'rm' non valido. Usa: rm ${DEVICENAME}");
         }
@@ -128,6 +135,7 @@ void UserInterface::processCommand(const std::string &command, const Time &now, 
             throw std::invalid_argument("Errore: ID inesistente");
         }
     } else if (action == "show") {
+        // Visualizzazione stato globale o di un singolo impianto
         if (tokens.size() == 1) {
             logMessage(now, serra.StampaStato(), 0);
         } else if (tokens.size() == 2) {
@@ -137,6 +145,7 @@ void UserInterface::processCommand(const std::string &command, const Time &now, 
             throw std::invalid_argument("Errore: comando 'show' non valido. Usa: show oppure show ${DEVICENAME}");
         }
     } else if (action == "reset") {
+        // Gestione dei reset: orario, timer o entrambi
         if (tokens.size() != 2)
             throw std::invalid_argument("Errore: comando 'reset' non valido.");
 
@@ -155,6 +164,7 @@ void UserInterface::processCommand(const std::string &command, const Time &now, 
                 "Errore: opzione 'reset' non valida. Usa: reset time | reset timers | reset all");
         }
     } else if (action == "help") {
+        // Stampa i comandi disponibili
         const std::string commands = R"(Comandi disponibili:
         set <NOME> on              - Accende l'impianto manuale
         set <NOME> off             - Spegne l'impianto manuale
@@ -171,6 +181,7 @@ void UserInterface::processCommand(const std::string &command, const Time &now, 
         )";
         logMessage(now, commands, 0);
     } else if(action == "exit") {
+        // Chiude il programma e il file di log
         logMessage(now, "Uscita dal programma.", 0);
         closeFile();    // Forzare la chiusura file
         std::exit(EXIT_SUCCESS);    // Esecuzione terminata
@@ -179,6 +190,7 @@ void UserInterface::processCommand(const std::string &command, const Time &now, 
     }
 }
 
+// Apre il file di log in modalità append (mantiene i messaggi precedenti)
 void UserInterface::openFile() {
     if (!logFile.is_open()) {
         logFile.open(logFilePath, std::ios::app); //std::ios::app => append del testo
@@ -187,9 +199,11 @@ void UserInterface::openFile() {
     }
 }
 
+// Inizializzazione variabili statiche
 std::ofstream UserInterface::logFile;
 std::string UserInterface::logFilePath = "../log/logFile.txt";
 
+// Chiude il file di log, se aperto
 void UserInterface::closeFile() {
     if (logFile.is_open())
         logFile.close();

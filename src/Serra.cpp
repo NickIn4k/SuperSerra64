@@ -16,31 +16,33 @@ void Serra::setTime(int hour, int minute) {
 
     while(now.Hour != hour || now.Minute != minute) {
         now++;
-        //Ccheck per ogni impianto con OnTimeChanged(now)
+        //Ogni impianto controlla se deve accendersi/spegnersi con OnTimeChanged(now)
         for (auto it = impianti.begin(); it != impianti.end(); ++it) {
             it->second->OnTimeChanged(now);
         }
     }
 }
 
+// Aggiunge un nuovo impianto alla mappa usando il suo ID come chiave
 void Serra::AggiungiImpianto(std::unique_ptr<Impianto> nuovoImpianto) {
     //unique_ptr non può essere copiato, ma solo spostato (tramite move())
     impianti.insert({nuovoImpianto->getID(), std::move(nuovoImpianto)});
 }
 
+// Rimuove un impianto tramite ID; se non trovato, solleva un'eccezione
 void Serra::RimuoviImpianto(int ID) {
     //Se l'ID non esiste restituirà 0, altrimenti 1
     if(this->impianti.erase(ID) == 0)
         throw std::invalid_argument("Invalid ID");      //Solleva un'eccezione
 }
-
+// Accende un impianto cercandolo per nome; ritorna il messaggio corrispondente
 std::string Serra::AccendiImpianto(const std::string& nome) {
     Impianto* imp = getImpianto(nome);
     if (imp == nullptr)
         throw std::invalid_argument("Impianto non trovato");    // Solleva un'eccezione
     return imp->Accendi(now);
 }
-
+// Spegne un impianto cercandolo per nome; ritorna il messaggio corrispondente
 std::string Serra::SpegniImpianto(const std::string& nome) const {
     Impianto* imp = getImpianto(nome);
     if (imp == nullptr)
@@ -62,13 +64,14 @@ Impianto* Serra::getImpianto(const std::string& nome) const {
     }
     return nullptr;
 }
-
+// Resetta i timer di tutti gli impianti (per impianti automatici o temporizzati)
 std::string Serra::ResetAllTimers() {
     for (auto imp = impianti.begin(); imp != impianti.end(); ++imp)
         imp->second->ResetTimers();
     return "Timer di tutti gli impianti azzerati.";
 }
 
+// Ritorna l'orario attuale della serra
 Time Serra::getNow() const {
     return this->now;
 }
