@@ -1,33 +1,33 @@
 #include "ConTermometro.h"
 
 ConTermometro::ConTermometro(const std::string &Nome, float tempAccensione, float tempSpegnimento): Impianto(Nome), tempAccensione{tempAccensione}, tempSpegnimento {tempSpegnimento} {
-    cont = 20.0;
+    tempAttuale = 20.0f;
     ultimoAggiornamento = Time(0,0);
 }
 
 std::string ConTermometro::Spegni() {
     this->acceso = false;
-    return "Impianto spento con temperatura: " + std::to_string(cont);
+    return "Impianto spento con temperatura: " + std::to_string(tempAttuale);
 }
 
 std::string ConTermometro::Accendi(Time now) {
     this->acceso = true;
     this->ultimaAccensione = now;
-    return "Impianto acceso alle ore: " + now.getTime() + " con temperatura: " + std::to_string(cont);
+    return "Impianto acceso alle ore: " + now.getTime() + " con temperatura: " + std::to_string(tempAttuale);
 }
 
 void ConTermometro::OnTimeChanged(Time now) {
     int diffMin;
     if(!acceso) {
-        cont-=randomFloat(0.01f, 0.05f);
-        if(cont<=tempAccensione)
+        tempAttuale-=randomFloat(0.01f, 0.05f);
+        if(tempAttuale<=tempAccensione)
             Accendi(now);
     }
     else {
         diffMin = ultimoAggiornamento.DifferenzaMin(now);
         if(diffMin >= 60)
-            cont+=randomFloat(0.75f, 1.0f);
-        if(cont >= tempSpegnimento)
+            tempAttuale+=randomFloat(0.75f, 1.0f);
+        if(tempAttuale >= tempSpegnimento)
             Spegni();
     }
     ultimoAggiornamento = now;

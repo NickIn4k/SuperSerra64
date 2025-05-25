@@ -44,47 +44,49 @@ int main() {
         if (scelta == 1) {
             float tempAcc, tempSpegn;
             do {
-                cout << "Temperatura accensione: ";
+                cout << "Temperatura accensione in °C: ";
                 cin >> tempAcc;
-                cout << "Temperatura spegnimento: ";
+                cout << "Temperatura spegnimento in °C: ";
                 cin >> tempSpegn;
 
                 if (cin.fail() || tempAcc < 0.0f || tempSpegn > 50.0f) {
                     cin.clear();
                     cin.ignore();
                 }
+                else
+                    impianto = std::make_unique<ConTermometro>(nome, tempAcc, tempSpegn);
             }while(cin.fail() || (tempAcc < 0.0f || tempSpegn > 50.0f));
-
-            impianto = std::make_unique<ConTermometro>(nome, tempAcc, tempSpegn);
         }
         else if (scelta == 2) {
             int hStart, mStart, hStop, mStop;
+            do {
+                cout << "Accensione (ore e minuti separati da uno spazio): ";
+                cin >> hStart >> mStart;
+                cout << "Spegnimento (ore e minuti separati da uno spazio): ";
+                cin >> hStop >> mStop;
 
-            cout << "Accensione (h m): ";
-            cin >> hStart >> mStart;
-            if (cin.fail() || hStart < 0 || hStart > 23 || mStart < 0 || mStart > 59) {
-                cin.clear();
-                cin.ignore();
-            }
-            cout << "Spegnimento (h m): ";
-            cin >> hStop >> mStop;
-            if (cin.fail() || hStart < 0 || hStart > 23 || mStart < 0 || mStart > 59) {
-                cin.clear();
-                cin.ignore();
-            }
-
-            impianto = std::make_unique<Manuale>(nome, Time(hStart,mStart), Time(hStop,mStop));
+                if (cin.fail() || hStart < 0 || hStart > 23 || mStart < 0 || mStart > 59) {
+                    cin.clear();
+                    cin.ignore();
+                }
+                else
+                    impianto = std::make_unique<Manuale>(nome, Time(hStart,mStart), Time(hStop,mStop));
+            }while(cin.fail() || hStart < 0 || hStart > 23 || mStart < 0 || mStart > 59)
         }
         else if (scelta == 3) {
             int hourTimer, minuteTimer;
-            cout << "Durata timer (h m): ";
-            cin >> hourTimer >> minuteTimer;
-            if (cin.fail() || hourTimer < 0 || hourTimer > 23 || minuteTimer < 0 || minuteTimer > 59) {
-                cin.clear();
-                cin.ignore();
-            }
-            impianto = std::make_unique<Automatico>(nome, Time(hourTimer,minuteTimer));
+            do {
+                cout << "Durata timer (ore e minuti separati da uno spazio): ";
+                cin >> hourTimer >> minuteTimer;
+                if (cin.fail() || hourTimer < 0 || hourTimer > 23 || minuteTimer < 0 || minuteTimer > 59) {
+                    cin.clear();
+                    cin.ignore();
+                }
+                else
+                    impianto = std::make_unique<Automatico>(nome, Time(hourTimer,minuteTimer));
+            }while(cin.fail() || hourTimer < 0 || hourTimer > 23 || minuteTimer < 0 || minuteTimer > 59);
         }
+
         superSerra.AggiungiImpianto(std::move(impianto));
 
         cout << "Vuoi continuare ad aggiungere impianti? (si'/no): ";

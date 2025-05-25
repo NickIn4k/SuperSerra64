@@ -5,7 +5,7 @@
 
 class ConTermometro: public Impianto {
 private:
-    float cont;
+    float tempAttuale;
     Time ultimoAggiornamento;
 protected:
     float tempAccensione;
