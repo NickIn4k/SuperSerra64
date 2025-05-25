@@ -137,7 +137,11 @@ void UserInterface::processCommand(const std::string &command, const Time &now, 
     } else if (action == "show") {
         // Visualizzazione stato globale o di un singolo impianto
         if (tokens.size() == 1) {
-            logMessage(now, serra.StampaStato(), 0);
+            std::istringstream stream(serra.StampaStato());
+            std::string line;
+            while (std::getline(stream, line)) {
+                logMessage(now, line, 0);
+            }
         } else if (tokens.size() == 2) {
             const std::string &deviceName = tokens[1];
             logMessage(now, serra.getImpianto(deviceName)->Stampa(), 0);

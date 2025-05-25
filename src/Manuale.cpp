@@ -16,11 +16,11 @@ std::string Manuale::Accendi(Time now) {
 }
 // Controlla se è arrivato il momento di accendere o spegnere l'impianto
 // (eseguito ogni minuto dalla serra)
-void Manuale::OnTimeChanged(Time now) {
+std::string Manuale::OnTimeChanged(Time now) {
     if(!acceso && now == this->timerAccensione)
-        Accendi(now);
-    else if(acceso &&  now == this->timerSpegnimento)
-        Spegni();
+        return Accendi(now);
+    if(acceso &&  now == this->timerSpegnimento)
+        return Spegni();
 }
 // Resetta i timer riportando accensione e spegnimento a 00:00
 void Manuale::ResetTimers() {

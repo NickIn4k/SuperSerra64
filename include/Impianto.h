@@ -18,7 +18,7 @@ public:
     std::string getNome() const;                    // Restituisce il nome
     virtual std::string Accendi(Time accensione) = 0; // Accende l'impianto
     virtual std::string Spegni() = 0;                // Spegne l'impianto
-    virtual void OnTimeChanged(Time now) = 0;       // Aggiornamento periodico con il tempo corrente
+    virtual std::string OnTimeChanged(Time now) = 0;       // Aggiornamento periodico con il tempo corrente
     virtual void ResetTimers() = 0;                // Reset dei timer interni
     std::string Stampa() const;                   // Restituisce le informazioni dell'impianto
 

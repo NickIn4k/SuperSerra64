@@ -13,7 +13,7 @@ public:
     Manuale(const std::string &Nome, Time Accensione, Time Spegnimento);
     std::string Spegni() override;
     std::string Accendi(Time now) override;
-    void OnTimeChanged(Time now) override;
+    std::string OnTimeChanged(Time now) override;
     void ResetTimers() override;
 };
 #endif //MANUALE_H

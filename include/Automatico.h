@@ -6,7 +6,7 @@
 
 class Automatico: public Impianto {
 private:
-    Time contatore;
+    Time contMin;
 protected:
     Time timerSpegnimento;
     Time timerAccensione;
@@ -17,7 +17,7 @@ public:
     void SetStart(Time accensione);
     std::string Spegni() override;
     std::string Accendi(Time now) override;
-    void OnTimeChanged(Time now) override;
+    std::string OnTimeChanged(Time now) override;
     void ResetTimers() override;
 };
 #endif //AUTOMATICO_H

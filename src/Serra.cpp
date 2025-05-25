@@ -1,4 +1,5 @@
 #include "Serra.h"
+#include "UserInterface.h"
 
 //Costruttore che inizializza il tempo a 0:0
 Serra::Serra() : now(0, 0){}
@@ -8,9 +9,9 @@ void Serra::AggiornaOrario(Time t) {
     setTime(t.Hour, t.Minute);
 }
 
-//DA FINIRE
 //Aumento di uno alla volta i minuti => deve fare il check per ogni singolo impianto
 void Serra::setTime(int hour, int minute) {
+    UserInterface ui;       // Gestione interazione con utente e log
     if(hour > 23 || hour < 0 || minute > 59 || minute < 0)
         throw std::invalid_argument("Invalid time");        //Solleva un'eccezione
 
@@ -18,7 +19,7 @@ void Serra::setTime(int hour, int minute) {
         now++;
         //Ogni impianto controlla se deve accendersi/spegnersi con OnTimeChanged(now)
         for (auto it = impianti.begin(); it != impianti.end(); ++it) {
-            it->second->OnTimeChanged(now);
+            ui.logMessage(now,it->second->OnTimeChanged(now),0);
         }
     }
 }
@@ -33,7 +34,7 @@ void Serra::AggiungiImpianto(std::unique_ptr<Impianto> nuovoImpianto) {
 void Serra::RimuoviImpianto(int ID) {
     //Se l'ID non esiste restituirà 0, altrimenti 1
     if(this->impianti.erase(ID) == 0)
-        throw std::invalid_argument("Invalid ID");      //Solleva un'eccezione
+        throw std::invalid_argument("Invalid ID");      // Solleva un'eccezione
 }
 // Accende un impianto cercandolo per nome; ritorna il messaggio corrispondente
 std::string Serra::AccendiImpianto(const std::string& nome) {
@@ -51,8 +52,9 @@ std::string Serra::SpegniImpianto(const std::string& nome) const {
 }
 
 void Serra::ResetTime() {
-    //DEVE SPEGNERE OGNI IMPIANTO ANCORA
     this->now = Time(0,0);
+    for (auto imp = impianti.begin(); imp != impianti.end(); ++imp)
+        imp->second->Spegni();
 }
 
 // Ricerca di un impianto per nome
@@ -64,6 +66,7 @@ Impianto* Serra::getImpianto(const std::string& nome) const {
     }
     return nullptr;
 }
+
 // Resetta i timer di tutti gli impianti (per impianti automatici o temporizzati)
 std::string Serra::ResetAllTimers() {
     for (auto imp = impianti.begin(); imp != impianti.end(); ++imp)

@@ -19,7 +19,7 @@ std::string ConTermometro::Accendi(Time now) {
 }
 
 // Metodo chiamato quando cambia l'orario per aggiornare lo stato in base alla temperatura
-void ConTermometro::OnTimeChanged(Time now) {
+std::string ConTermometro::OnTimeChanged(Time now) {
     int diffMin;
     if(!acceso) {
         // Se spento, la temperatura scende leggermente
@@ -27,7 +27,7 @@ void ConTermometro::OnTimeChanged(Time now) {
 
         // Se la temperatura scende sotto la soglia, accendi l’impianto
         if(tempAttuale<=tempAccensione)
-            Accendi(now);
+            return Accendi(now);
     }
     else {
         // Se acceso, verifica quanto tempo è passato dall’ultimo aggiornamento
@@ -37,11 +37,12 @@ void ConTermometro::OnTimeChanged(Time now) {
             tempAttuale+=randomFloat(0.75f, 1.0f);
         // Se la temperatura supera la soglia, spegni l’impianto
         if(tempAttuale >= tempSpegnimento)
-            Spegni();
+            return Spegni();
     }
 
     // Aggiorna l’orario dell’ultima modifica
     ultimoAggiornamento = now;
+    return "Impianto " + this->nome + ": temperatura modificata a " + std::to_string(this->tempAttuale);
 }
 
 // Questo metodo non serve in questa classe => non c'è un timer da resettare!

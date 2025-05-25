@@ -15,7 +15,7 @@ void Automatico::SetStart(Time accensione) {
 
 // Spegne l’impianto, azzera il contatore e restituisce un messaggio
 std::string Automatico::Spegni() {
-    this->contatore = Time(0,0);
+    this->contMin = Time(0,0);
     acceso = false;
     return "Impianto spento automaticamente";
 }
@@ -28,14 +28,13 @@ std::string Automatico::Accendi(Time now) {
 }
 
 // Metodo chiamato ad ogni variazione dell’orario, controlla se è il momento di accendere o spegnere l’impianto
-void Automatico::OnTimeChanged(Time now) {
+std::string Automatico::OnTimeChanged(Time now) {
     if(!acceso && now == this->timerAccensione)
-        Accendi(now);
-    else{
-        contatore++;
-        if(this->contatore == this->timerSpegnimento)
-            Spegni();
-    }
+        return Accendi(now);
+
+    this->contMin++;
+    if(this->contMin == this->timerSpegnimento)
+        return Spegni();
 }
 // Reimposta entrambi i timer (accensione e spegnimento) a 00:00
 void Automatico::ResetTimers() {
