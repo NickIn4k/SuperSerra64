@@ -4,7 +4,7 @@
 Automatico::Automatico(const std::string &Nome, Time newTimer): Impianto(Nome), timerSpegnimento{newTimer} {};
 
 // Imposta un nuovo tempo per lo spegnimento automatico
-void Automatico::SetStop(Time newTimer) {
+void Automatico::SetTimerStop(Time newTimer) {
     this->timerSpegnimento = newTimer;
 }
 
@@ -32,9 +32,11 @@ std::string Automatico::OnTimeChanged(Time now) {
     if(!acceso && now == this->orarioAccensione)
         return Accendi(now);
 
-    this->contMin++;
-    if(this->contMin == this->timerSpegnimento)
-        return Spegni();
+    if(acceso) {
+        this->contMin++;
+        if(this->contMin == this->timerSpegnimento)
+            return Spegni();
+    }
 
     return "";
 }

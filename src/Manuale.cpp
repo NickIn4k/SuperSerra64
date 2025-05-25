@@ -35,3 +35,11 @@ std::string Manuale::Stampa() const {
     std::string stato = acceso ? "ACCESO" : "SPENTO";
     return "Impianto: " + nome +", ID: " + std::to_string(ID) + ", Stato: " + stato + ", Orario accensione: " + timerAccensione.getTime()+ ", Orario spegnimento: " + timerSpegnimento.getTime() + ", Ultima accensione: " + ultimaAccensione.getTime();
 }
+
+void Manuale::SetStart(Time start) {
+    this->timerAccensione = start;
+}
+
+void Manuale::SetStop(Time stop) {
+    this->timerSpegnimento = stop;
+}

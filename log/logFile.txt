@@ -1,0 +1,148 @@
+[0:0]	Orario del comando: 0:0
+
+[0:0]	Comandi disponibili:
+        set <NOME> on              - Accende l'impianto manuale
+        set <NOME> off             - Spegne l'impianto manuale
+        set <NOME> <START>         - Imposta l'orario di accensione di un impianto automatico
+        set <NOME> <START> <STOP>  - Imposta l'accensione e lo spegnimento degli impianti temporizzati (<STOP> in un automatico e' il timer)
+        rm <ID>                    - Rimuove l'impianto
+        show                       - Mostra lo stato e consumo di tutti gli impianti
+        show <NOME>                - Mostra lo stato e i dettagli di un impianto
+        set time <HH:MM>           - Imposta l'orario attuale della serra
+        reset time                 - Resetta l'orario a [00:00] e spegne tutti gli impianti
+        reset timers               - Rimuove tutti i timer mantenendo lo stato attuale
+        reset all                  - Resetta orario, timer e spegne tutti gli impianti
+        exit                       - Termina l'esecuzione
+        help                       - Mostra tutti i comandi possibili
+        
+
+[0:0]	Orario del comando: 0:0
+
+[0:0]	Orario del comando: 0:0
+
+[0:0]	Comandi disponibili:
+        set <NOME> on              - Accende l'impianto manuale
+        set <NOME> off             - Spegne l'impianto manuale
+        set <NOME> <START>         - Imposta l'orario di accensione di un impianto automatico
+        set <NOME> <START> <STOP>  - Imposta accensione e spegnimento di impianti temporizzati (<STOP> in nell'automatico e' il timer)
+        rm <ID>                    - Rimuove l'impianto
+        show                       - Mostra lo stato e consumo di tutti gli impianti
+        show <NOME>                - Mostra lo stato e i dettagli di un impianto
+        set time <HH:MM>           - Imposta l'orario attuale della serra
+        reset time                 - Resetta l'orario a [00:00] e spegne tutti gli impianti
+        reset timers               - Rimuove tutti i timer mantenendo lo stato attuale
+        reset all                  - Resetta orario, timer e spegne tutti gli impianti
+        exit                       - Termina l'esecuzione
+        help                       - Mostra tutti i comandi possibili
+        
+
+[0:0]	Orario del comando: 0:0
+
+[0:0]	Impianto: auto, ID: 0, Stato: SPENTO, Orario accensione: 0:0, Timer di: 0:30, Ultima accensione: -1:-1
+
+[0:0]	Orario del comando: 0:0
+
+[0:0]	Impianto: auto, ID: 0, Stato: SPENTO, Orario accensione: 0:0, Timer di: 0:30, Ultima accensione: -1:-1
+
+[0:0]	Orario del comando: 0:0
+
+[0:0]	Timer di accensione di auto impostato a: 1:0
+
+[0:0]	Orario del comando: 0:0
+
+[0:0]	Impianto: auto, ID: 0, Stato: SPENTO, Orario accensione: 1:0, Timer di: 0:30, Ultima accensione: -1:-1
+
+[0:0]	Orario del comando: 0:0
+
+[0:30]	Impianto automatico auto spento
+
+[0:0]	Aggiornamento orario (minuto per minuto)
+
+[0:50]	Orario del comando: 0:50
+
+[1:0]	Impianto acceso auto
+
+[0:50]	Aggiornamento orario (minuto per minuto)
+
+[1:0]	Orario del comando: 1:0
+
+[1:0]	Impianto: auto, ID: 0, Stato: ACCESO, Orario accensione: 1:0, Timer di: 0:30, Ultima accensione: 1:0
+
+[1:0]	Orario del comando: 1:0
+
+[1:1]	Impianto automatico auto spento
+
+[1:31]	Impianto automatico auto spento
+
+[1:0]	Aggiornamento orario (minuto per minuto)
+
+[2:0]	Orario del comando: 2:0
+
+[0:0]	Orario del comando: 0:0
+
+[0:0]	Impianto: a1, ID: 0, Stato: SPENTO, Orario accensione: 0:0, Timer di: 1:30, Ultima accensione: -1:-1
+
+[0:0]	Orario del comando: 0:0
+
+[0:0]	Aggiornamento orario (minuto per minuto)
+
+[0:30]	Orario del comando: 0:30
+
+[0:30]	Impianto: a1, ID: 0, Stato: SPENTO, Orario accensione: 0:0, Timer di: 1:30, Ultima accensione: -1:-1
+
+[0:30]	Orario del comando: 0:30
+
+[0:30]	Timer di accensione di a1 impostato a: 2:0
+
+[0:30]	Orario del comando: 0:30
+
+[0:30]	Aggiornamento orario (minuto per minuto)
+
+[0:45]	Orario del comando: 0:45
+
+[1:30]	Impianto automatico a1 spento
+
+[0:45]	Aggiornamento orario (minuto per minuto)
+
+[1:58]	Orario del comando: 1:58
+
+[2:0]	Impianto acceso a1
+
+[1:58]	Aggiornamento orario (minuto per minuto)
+
+[2:1]	Orario del comando: 2:1
+
+[2:1]	Aggiornamento orario (minuto per minuto)
+
+[2:10]	Orario del comando: 2:10
+
+[3:1]	Impianto automatico a1 spento
+
+[2:10]	Aggiornamento orario (minuto per minuto)
+
+[3:40]	Orario del comando: 3:40
+
+[4:31]	Impianto automatico a1 spento
+
+[6:1]	Impianto automatico a1 spento
+
+[7:31]	Impianto automatico a1 spento
+
+[9:1]	Impianto automatico a1 spento
+
+[10:31]	Impianto automatico a1 spento
+
+[12:1]	Impianto automatico a1 spento
+
+[13:31]	Impianto automatico a1 spento
+
+[15:1]	Impianto automatico a1 spento
+
+[16:31]	Impianto automatico a1 spento
+
+[18:1]	Impianto automatico a1 spento
+
+[19:31]	Impianto automatico a1 spento
+
+[3:40]	Aggiornamento orario (minuto per minuto)
+

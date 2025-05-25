@@ -1,5 +1,6 @@
 #include "UserInterface.h"
 #include "Automatico.h"
+#include "Manuale.h"
 #include <iostream>
 #include <sstream>
 #include <stdexcept>
@@ -107,13 +108,20 @@ void UserInterface::processCommand(const std::string &command, const Time &now, 
                 // Comando con timer: set <device> HH:MM oppure HH:MM HH:MM
                 Time start{operation};
                 Automatico *autoImp = dynamic_cast<Automatico *>(imp);
-                if (!autoImp)
+                Manuale *manImp = dynamic_cast<Manuale *>(imp);
+                if (!autoImp && !manImp)
                     throw std::invalid_argument(deviceName + " non supporta la programmazione temporale.");
 
                 if (tokens.size() == 4) {
                     Time stop{tokens[3]};
-                    autoImp->SetStop(stop);
-                    autoImp->SetStart(start);
+                    if(autoImp) {
+                        autoImp->SetTimerStop(stop);
+                        autoImp->SetStart(start);
+                    }
+                    else if (manImp) {
+                        manImp->SetStart(start);
+                        manImp->SetStop(stop);
+                    }
                     logMessage(
                         now, "Timer di " + deviceName + " impostati a: " + start.getTime() + " - " + stop.getTime(), 0);
                 } else {
@@ -173,7 +181,7 @@ void UserInterface::processCommand(const std::string &command, const Time &now, 
         set <NOME> on              - Accende l'impianto manuale
         set <NOME> off             - Spegne l'impianto manuale
         set <NOME> <START>         - Imposta l'orario di accensione di un impianto automatico
-        set <NOME> <START> <STOP>  - Imposta l'accensione e lo spegnimento dell'impianto automatico
+        set <NOME> <START> <STOP>  - Imposta accensione e spegnimento di impianti temporizzati (<STOP> in nell'automatico e' il timer)
         rm <ID>                    - Rimuove l'impianto
         show                       - Mostra lo stato e consumo di tutti gli impianti
         show <NOME>                - Mostra lo stato e i dettagli di un impianto

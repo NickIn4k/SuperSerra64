@@ -16,5 +16,7 @@ public:
     std::string OnTimeChanged(Time now) override;
     void ResetTimers() override;
     std::string Stampa() const override; // Restituisce le informazioni dell'impianto
+    void SetStart(Time start);
+    void SetStop(Time stop);
 };
 #endif //MANUALE_H
