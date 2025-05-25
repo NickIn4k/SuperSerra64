@@ -1,0 +1,231 @@
+[0:0]	L'orario attuale e' 0:0
+
+[0:0]	L'orario attuale e' 0:0
+
+[0:0]	L'orario attuale e' 0:0
+
+[0:0]	L'orario attuale e' 0:0
+
+[0:0]	L'orario attuale e' 0:0
+
+[0:0]	Comandi disponibili:
+  set <ID> on              - Accende l'impianto manuale
+  set <ID> off             - Spegne l'impianto manuale
+  set <ID> <START>         - Accensione automatica impianto manuale
+  set <ID> <START> <STOP>  - Accensione automatica impianto automatico
+  rm <ID>                  - Rimuove i timer dell'impianto (reset a [00:00])
+  show                     - Mostra lo stato e consumo di tutti gli impianti
+  show <ID>                - Mostra lo stato e i dettagli di un impianto
+  set time <HH:MM>         - Imposta l'orario attuale della serra
+  reset time               - Resetta l'orario a [00:00] e spegne tutti gli impianti
+  reset timers             - Rimuove tutti i timer mantenendo lo stato attuale
+  reset all                - Resetta orario, timer e spegne tutti gli impianti
+
+[0:0]	L'orario attuale e' 0:0
+
+[0:0]	Comandi disponibili:
+  set <ID> on              - Accende l'impianto manuale
+  set <ID> off             - Spegne l'impianto manuale
+  set <ID> <START>         - Imposta l'accensione automatica di un impianto manuale
+  set <ID> <START> <STOP>  - Imposta l'accensione e lo speginmento dell'impianto automatico
+  rm <ID>                  - Rimuove l'impianto 
+  show                     - Mostra lo stato e consumo di tutti gli impianti
+  show <ID>                - Mostra lo stato e i dettagli di un impianto
+  set time <HH:MM>         - Imposta l'orario attuale della serra
+  reset time               - Resetta l'orario a [00:00] e spegne tutti gli impianti
+  reset timers             - Rimuove tutti i timer mantenendo lo stato attuale
+  reset all                - Resetta orario, timer e spegne tutti gli impianti
+
+[0:0]	L'orario attuale e' 0:0
+
+[0:0]	Comandi disponibili:
+  set <ID> on              - Accende l'impianto manuale
+  set <ID> off             - Spegne l'impianto manuale
+  set <ID> <START>         - Imposta l'accensione automatica di un impianto manuale
+  set <ID> <START> <STOP>  - Imposta l'accensione e lo speginmento dell'impianto automatico
+  rm <ID>                  - Rimuove l'impianto 
+  show                     - Mostra lo stato e consumo di tutti gli impianti
+  show <ID>                - Mostra lo stato e i dettagli di un impianto
+  set time <HH:MM>         - Imposta l'orario attuale della serra
+  reset time               - Resetta l'orario a [00:00] e spegne tutti gli impianti
+  reset timers             - Rimuove tutti i timer mantenendo lo stato attuale
+  reset all                - Resetta orario, timer e spegne tutti gli impianti
+
+[0:0]	L'orario attuale e' 0:0
+
+[0:0]	Impianto: nom1
+ID: 0
+Stato: SPENTO
+Ultima accensione: -1:-1
+
+
+[0:0]	L'orario attuale e' 0:0
+
+[0:0]	L'orario attuale e' 0:0
+
+[0:0]	Impianto: n1, ID: 0, Stato: SPENTO, Ultima accensione: -1:-1
+
+
+[0:0]	L'orario attuale e' 0:0
+
+[0:0]	L'orario attuale e' 0:0
+
+[0:0]	
+
+[0:0]	L'orario attuale e' 0:0
+
+[0:0]	Impianto: temp1, ID: 0, Stato: SPENTO, Ultima accensione: -1:-1
+
+
+[0:0]	L'orario attuale e' 0:0
+
+[0:0]	Impianto: temp1, ID: 0, Stato: SPENTO, Ultima accensione: -1:-1
+
+
+[0:0]	L'orario attuale e' 0:0
+
+[0:0]	Comandi disponibili:
+  set <NOME> on              - Accende l'impianto manuale
+  set <NOME> off             - Spegne l'impianto manuale
+  set <NOME> <START>         - Imposta l'accensione automatica di un impianto manuale
+  set <NOME> <START> <STOP>  - Imposta l'accensione e lo speginmento dell'impianto automatico
+  rm <ID>                  - Rimuove l'impianto 
+  show                     - Mostra lo stato e consumo di tutti gli impianti
+  show <NOME>                - Mostra lo stato e i dettagli di un impianto
+  set time <HH:MM>         - Imposta l'orario attuale della serra
+  reset time               - Resetta l'orario a [00:00] e spegne tutti gli impianti
+  reset timers             - Rimuove tutti i timer mantenendo lo stato attuale
+  reset all                - Resetta orario, timer e spegne tutti gli impianti
+
+[0:0]	L'orario attuale e' 0:0
+
+[0:0]	Comandi disponibili:
+  set <NOME> on              - Accende l'impianto manuale
+  set <NOME> off             - Spegne l'impianto manuale
+  set <NOME> <START>         - Imposta l'accensione automatica di un impianto manuale
+  set <NOME> <START> <STOP>  - Imposta l'accensione e lo speginmento dell'impianto automatico
+  rm <ID>                  - Rimuove l'impianto 
+  show                     - Mostra lo stato e consumo di tutti gli impianti
+  show <NOME>                - Mostra lo stato e i dettagli di un impianto
+  set time <HH:MM>         - Imposta l'orario attuale della serra
+  reset time               - Resetta l'orario a [00:00] e spegne tutti gli impianti
+  reset timers             - Rimuove tutti i timer mantenendo lo stato attuale
+  reset all                - Resetta orario, timer e spegne tutti gli impianti
+
+[0:0]	L'orario attuale e' 0:0
+
+[0:0]	Comandi disponibili:
+  set <NOME> on              - Accende l'impianto manuale
+  set <NOME> off             - Spegne l'impianto manuale
+  set <NOME> <START>         - Imposta l'accensione automatica di un impianto manuale
+  set <NOME> <START> <STOP>  - Imposta l'accensione e lo speginmento dell'impianto automatico
+  rm <ID>                  - Rimuove l'impianto 
+  show                     - Mostra lo stato e consumo di tutti gli impianti
+  show <NOME>                - Mostra lo stato e i dettagli di un impianto
+  set time <HH:MM>         - Imposta l'orario attuale della serra
+  reset time               - Resetta l'orario a [00:00] e spegne tutti gli impianti
+  reset timers             - Rimuove tutti i timer mantenendo lo stato attuale
+  reset all                - Resetta orario, timer e spegne tutti gli impianti
+
+[0:0]	L'orario attuale e' 0:0
+
+[0:0]	Impianto manuale acceso alle ore: 0:0
+
+[0:0]	L'orario attuale e' 0:0
+
+[0:0]	Impianto: temp1, ID: 0, Stato: SPENTO, Ultima accensione: -1:-1
+
+
+[0:0]	L'orario attuale e' 0:0
+
+[0:0]	Comandi disponibili:
+        set <NOME> on              - Accende l'impianto manuale
+        set <NOME> off             - Spegne l'impianto manuale
+        set <NOME> <START>         - Imposta l'accensione automatica di un impianto manuale
+        set <NOME> <START> <STOP>  - Imposta l'accensione e lo speginmento dell'impianto automatico
+        rm <ID>                    - Rimuove l'impianto
+        show                       - Mostra lo stato e consumo di tutti gli impianti
+        show <NOME>                - Mostra lo stato e i dettagli di un impianto
+        set time <HH:MM>           - Imposta l'orario attuale della serra
+        reset time                 - Resetta l'orario a [00:00] e spegne tutti gli impianti
+        reset timers               - Rimuove tutti i timer mantenendo lo stato attuale
+        reset all                  - Resetta orario, timer e spegne tutti gli impianti
+        
+
+[0:0]	L'orario attuale e' 0:0
+
+[0:0]	Impianto: t1, ID: 0, Stato: SPENTO, Ultima accensione: -1:-1
+Impianto: m1, ID: 1, Stato: SPENTO, Ultima accensione: -1:-1
+
+
+[0:0]	L'orario attuale e' 0:0
+
+[0:0]	L'orario attuale e' 0:0
+
+[0:0]	Impianto: 1, ID: 0, Stato: SPENTO, Ultima accensione: -1:-1
+
+
+[0:0]	L'orario attuale e' 0:0
+
+[0:0]	Uscita dal programma.
+
+[0:0]	L'orario attuale e' 0:0
+
+[0:0]	Impianto: t1, ID: 0, Stato: SPENTO, Ultima accensione: -1:-1
+
+
+[0:0]	L'orario attuale e' 0:0
+
+[0:0]	Impianto: t1, ID: 0, Stato: SPENTO, Ultima accensione: -1:-1
+
+[0:0]	L'orario attuale e' 0:0
+
+[0:0]	Impianto: t1, ID: 0, Stato: SPENTO, Ultima accensione: -1:-1
+Impianto: t2, ID: 1, Stato: SPENTO, Ultima accensione: -1:-1
+
+
+[0:0]	L'orario attuale e' 0:0
+
+[0:0]	Impianto: t1, ID: 0, Stato: SPENTO, Ultima accensione: -1:-1
+
+[0:0]	L'orario attuale e' 0:0
+
+[0:0]	Impianto: t2, ID: 1, Stato: SPENTO, Ultima accensione: -1:-1
+
+[0:0]	L'orario attuale e' 0:0
+
+[0:0]	Aggiornamento orario (minuto per minuto)
+
+[3:0]	L'orario attuale e' 3:0
+
+[3:0]	Impianto: t1, ID: 0, Stato: ACCESO, Ultima accensione: 0:1
+Impianto: t2, ID: 1, Stato: ACCESO, Ultima accensione: 0:1
+
+
+[0:0]	Orario del comando: 0:0
+
+[0:0]	Aggiornamento orario (minuto per minuto)
+
+[0:59]	Orario del comando: 0:59
+
+[0:59]	Impianto: man1, ID: 0, Stato: SPENTO, Ultima accensione: -1:-1
+
+
+[0:59]	Orario del comando: 0:59
+
+[0:59]	Aggiornamento orario (minuto per minuto)
+
+[1:1]	Orario del comando: 1:1
+
+[1:1]	Impianto: man1, ID: 0, Stato: ACCESO, Ultima accensione: 1:0
+
+
+[1:1]	Orario del comando: 1:1
+
+[1:1]	Aggiornamento orario (minuto per minuto)
+
+[2:0]	Orario del comando: 2:0
+
+[2:0]	Impianto: man1, ID: 0, Stato: SPENTO, Ultima accensione: 1:0
+
+
