@@ -1661,3 +1661,21 @@ Impianto: t2, ID: 1, Stato: ACCESO, Ultima accensione: 0:1
 
 [0:0]	Aggiornamento orario (minuto per minuto)
 
+[0:0]	Orario del comando: 0:0
+
+[0:1]	Impianto t1 acceso con temperatura: 27.989950
+
+[0:0]	Aggiornamento orario (minuto per minuto)
+
+[0:30]	Orario del comando: 0:30
+
+[0:30]	Impianto: t1, ID: 0, Stato: ACCESO, Ultima accensione: 0:1
+
+[0:30]	Orario del comando: 0:30
+
+[0:30]	Aggiornamento orario (minuto per minuto)
+
+[10:30]	Orario del comando: 10:30
+
+[10:30]	Impianto: t1, ID: 0, Stato: ACCESO, Ultima accensione: 0:1
+
