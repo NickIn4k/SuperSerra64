@@ -255,3 +255,1409 @@ Impianto: t2, ID: 1, Stato: ACCESO, Ultima accensione: 0:1
 
 [0:0]	Orario del comando: 0:0
 
+[0:0]	Orario del comando: 0:0
+
+[0:0]	Orario del comando: 0:0
+
+[0:1]	Impianto acceso alle ore: 0:1 con temperatura: 19.989950
+
+[0:0]	Orario del comando: 0:0
+
+[0:0]	Orario del comando: 0:0
+
+[0:0]	Orario del comando: 0:0
+
+[0:0]	Orario del comando: 0:0
+
+[0:0]	Aggiornamento orario (minuto per minuto)
+
+[1:0]	Orario del comando: 1:0
+
+[1:0]	Impianto: m1, ID: 0, Stato: SPENTO, Ultima accensione: -1:-1
+
+[1:0]	Orario del comando: 1:0
+
+[1:30]	Impianto manuale m1 acceso
+
+[1:0]	Aggiornamento orario (minuto per minuto)
+
+[1:30]	Orario del comando: 1:30
+
+[1:35]	Impianto manuale m1 spento
+
+[1:30]	Aggiornamento orario (minuto per minuto)
+
+[1:40]	Orario del comando: 1:40
+
+[1:30]	Impianto manuale m1 acceso
+
+[1:40]	Aggiornamento orario (minuto per minuto)
+
+[0:0]	Orario del comando: 0:0
+
+[0:1]	Impianto t1: temperatura modificata a 19.989950
+
+[0:2]	Impianto t1: temperatura modificata a 19.957407
+
+[0:3]	Impianto t1: temperatura modificata a 19.939674
+
+[0:4]	Impianto t1: temperatura modificata a 19.897326
+
+[0:5]	Impianto t1: temperatura modificata a 19.863926
+
+[0:6]	Impianto t1: temperatura modificata a 19.834730
+
+[0:7]	Impianto t1: temperatura modificata a 19.810719
+
+[0:8]	Impianto t1: temperatura modificata a 19.764879
+
+[0:9]	Impianto t1: temperatura modificata a 19.721966
+
+[0:10]	Impianto t1: temperatura modificata a 19.682102
+
+[0:11]	Impianto t1: temperatura modificata a 19.665138
+
+[0:12]	Impianto t1: temperatura modificata a 19.620781
+
+[0:13]	Impianto t1: temperatura modificata a 19.582361
+
+[0:14]	Impianto t1: temperatura modificata a 19.551821
+
+[0:15]	Impianto t1: temperatura modificata a 19.529661
+
+[0:16]	Impianto t1: temperatura modificata a 19.519062
+
+[0:17]	Impianto t1: temperatura modificata a 19.505405
+
+[0:18]	Impianto t1: temperatura modificata a 19.480827
+
+[0:19]	Impianto t1: temperatura modificata a 19.464935
+
+[0:20]	Impianto t1: temperatura modificata a 19.448299
+
+[0:21]	Impianto t1: temperatura modificata a 19.398758
+
+[0:22]	Impianto t1: temperatura modificata a 19.370930
+
+[0:23]	Impianto t1: temperatura modificata a 19.356167
+
+[0:24]	Impianto t1: temperatura modificata a 19.345980
+
+[0:25]	Impianto t1: temperatura modificata a 19.335623
+
+[0:26]	Impianto t1: temperatura modificata a 19.310507
+
+[0:27]	Impianto t1: temperatura modificata a 19.279240
+
+[0:28]	Impianto t1: temperatura modificata a 19.246393
+
+[0:29]	Impianto t1: temperatura modificata a 19.212322
+
+[0:30]	Impianto t1: temperatura modificata a 19.178036
+
+[0:31]	Impianto t1: temperatura modificata a 19.161386
+
+[0:32]	Impianto t1: temperatura modificata a 19.124865
+
+[0:33]	Impianto t1: temperatura modificata a 19.096832
+
+[0:34]	Impianto t1: temperatura modificata a 19.072748
+
+[0:35]	Impianto t1: temperatura modificata a 19.060467
+
+[0:36]	Impianto t1: temperatura modificata a 19.026159
+
+[0:37]	Impianto t1 acceso con temperatura: 18.984827
+
+[0:38]	Impianto t1: temperatura modificata a 18.984827
+
+[0:39]	Impianto t1: temperatura modificata a 18.984827
+
+[0:40]	Impianto t1: temperatura modificata a 18.984827
+
+[0:41]	Impianto t1: temperatura modificata a 18.984827
+
+[0:42]	Impianto t1: temperatura modificata a 18.984827
+
+[0:43]	Impianto t1: temperatura modificata a 18.984827
+
+[0:44]	Impianto t1: temperatura modificata a 18.984827
+
+[0:45]	Impianto t1: temperatura modificata a 18.984827
+
+[0:46]	Impianto t1: temperatura modificata a 18.984827
+
+[0:47]	Impianto t1: temperatura modificata a 18.984827
+
+[0:48]	Impianto t1: temperatura modificata a 18.984827
+
+[0:49]	Impianto t1: temperatura modificata a 18.984827
+
+[0:50]	Impianto t1: temperatura modificata a 18.984827
+
+[0:51]	Impianto t1: temperatura modificata a 18.984827
+
+[0:52]	Impianto t1: temperatura modificata a 18.984827
+
+[0:53]	Impianto t1: temperatura modificata a 18.984827
+
+[0:54]	Impianto t1: temperatura modificata a 18.984827
+
+[0:55]	Impianto t1: temperatura modificata a 18.984827
+
+[0:56]	Impianto t1: temperatura modificata a 18.984827
+
+[0:57]	Impianto t1: temperatura modificata a 18.984827
+
+[0:58]	Impianto t1: temperatura modificata a 18.984827
+
+[0:59]	Impianto t1: temperatura modificata a 18.984827
+
+[1:0]	Impianto t1: temperatura modificata a 18.984827
+
+[1:1]	Impianto t1: temperatura modificata a 18.984827
+
+[1:2]	Impianto t1: temperatura modificata a 18.984827
+
+[1:3]	Impianto t1: temperatura modificata a 18.984827
+
+[1:4]	Impianto t1: temperatura modificata a 18.984827
+
+[1:5]	Impianto t1: temperatura modificata a 18.984827
+
+[1:6]	Impianto t1: temperatura modificata a 18.984827
+
+[1:7]	Impianto t1: temperatura modificata a 18.984827
+
+[1:8]	Impianto t1: temperatura modificata a 18.984827
+
+[1:9]	Impianto t1: temperatura modificata a 18.984827
+
+[1:10]	Impianto t1: temperatura modificata a 18.984827
+
+[1:11]	Impianto t1: temperatura modificata a 18.984827
+
+[1:12]	Impianto t1: temperatura modificata a 18.984827
+
+[1:13]	Impianto t1: temperatura modificata a 18.984827
+
+[1:14]	Impianto t1: temperatura modificata a 18.984827
+
+[1:15]	Impianto t1: temperatura modificata a 18.984827
+
+[1:16]	Impianto t1: temperatura modificata a 18.984827
+
+[1:17]	Impianto t1: temperatura modificata a 18.984827
+
+[1:18]	Impianto t1: temperatura modificata a 18.984827
+
+[1:19]	Impianto t1: temperatura modificata a 18.984827
+
+[1:20]	Impianto t1: temperatura modificata a 18.984827
+
+[1:21]	Impianto t1: temperatura modificata a 18.984827
+
+[1:22]	Impianto t1: temperatura modificata a 18.984827
+
+[1:23]	Impianto t1: temperatura modificata a 18.984827
+
+[1:24]	Impianto t1: temperatura modificata a 18.984827
+
+[1:25]	Impianto t1: temperatura modificata a 18.984827
+
+[1:26]	Impianto t1: temperatura modificata a 18.984827
+
+[1:27]	Impianto t1: temperatura modificata a 18.984827
+
+[1:28]	Impianto t1: temperatura modificata a 18.984827
+
+[1:29]	Impianto t1: temperatura modificata a 18.984827
+
+[1:30]	Impianto t1: temperatura modificata a 18.984827
+
+[1:31]	Impianto t1: temperatura modificata a 18.984827
+
+[1:32]	Impianto t1: temperatura modificata a 18.984827
+
+[1:33]	Impianto t1: temperatura modificata a 18.984827
+
+[1:34]	Impianto t1: temperatura modificata a 18.984827
+
+[1:35]	Impianto t1: temperatura modificata a 18.984827
+
+[1:36]	Impianto t1: temperatura modificata a 18.984827
+
+[1:37]	Impianto t1: temperatura modificata a 18.984827
+
+[1:38]	Impianto t1: temperatura modificata a 18.984827
+
+[1:39]	Impianto t1: temperatura modificata a 18.984827
+
+[1:40]	Impianto t1: temperatura modificata a 18.984827
+
+[1:41]	Impianto t1: temperatura modificata a 18.984827
+
+[1:42]	Impianto t1: temperatura modificata a 18.984827
+
+[1:43]	Impianto t1: temperatura modificata a 18.984827
+
+[1:44]	Impianto t1: temperatura modificata a 18.984827
+
+[1:45]	Impianto t1: temperatura modificata a 18.984827
+
+[1:46]	Impianto t1: temperatura modificata a 18.984827
+
+[1:47]	Impianto t1: temperatura modificata a 18.984827
+
+[1:48]	Impianto t1: temperatura modificata a 18.984827
+
+[1:49]	Impianto t1: temperatura modificata a 18.984827
+
+[1:50]	Impianto t1: temperatura modificata a 18.984827
+
+[1:51]	Impianto t1: temperatura modificata a 18.984827
+
+[1:52]	Impianto t1: temperatura modificata a 18.984827
+
+[1:53]	Impianto t1: temperatura modificata a 18.984827
+
+[1:54]	Impianto t1: temperatura modificata a 18.984827
+
+[1:55]	Impianto t1: temperatura modificata a 18.984827
+
+[1:56]	Impianto t1: temperatura modificata a 18.984827
+
+[1:57]	Impianto t1: temperatura modificata a 18.984827
+
+[1:58]	Impianto t1: temperatura modificata a 18.984827
+
+[1:59]	Impianto t1: temperatura modificata a 18.984827
+
+[2:0]	Impianto t1: temperatura modificata a 18.984827
+
+[2:1]	Impianto t1: temperatura modificata a 18.984827
+
+[2:2]	Impianto t1: temperatura modificata a 18.984827
+
+[2:3]	Impianto t1: temperatura modificata a 18.984827
+
+[2:4]	Impianto t1: temperatura modificata a 18.984827
+
+[2:5]	Impianto t1: temperatura modificata a 18.984827
+
+[2:6]	Impianto t1: temperatura modificata a 18.984827
+
+[2:7]	Impianto t1: temperatura modificata a 18.984827
+
+[2:8]	Impianto t1: temperatura modificata a 18.984827
+
+[2:9]	Impianto t1: temperatura modificata a 18.984827
+
+[2:10]	Impianto t1: temperatura modificata a 18.984827
+
+[2:11]	Impianto t1: temperatura modificata a 18.984827
+
+[2:12]	Impianto t1: temperatura modificata a 18.984827
+
+[2:13]	Impianto t1: temperatura modificata a 18.984827
+
+[2:14]	Impianto t1: temperatura modificata a 18.984827
+
+[2:15]	Impianto t1: temperatura modificata a 18.984827
+
+[2:16]	Impianto t1: temperatura modificata a 18.984827
+
+[2:17]	Impianto t1: temperatura modificata a 18.984827
+
+[2:18]	Impianto t1: temperatura modificata a 18.984827
+
+[2:19]	Impianto t1: temperatura modificata a 18.984827
+
+[2:20]	Impianto t1: temperatura modificata a 18.984827
+
+[2:21]	Impianto t1: temperatura modificata a 18.984827
+
+[2:22]	Impianto t1: temperatura modificata a 18.984827
+
+[2:23]	Impianto t1: temperatura modificata a 18.984827
+
+[2:24]	Impianto t1: temperatura modificata a 18.984827
+
+[2:25]	Impianto t1: temperatura modificata a 18.984827
+
+[2:26]	Impianto t1: temperatura modificata a 18.984827
+
+[2:27]	Impianto t1: temperatura modificata a 18.984827
+
+[2:28]	Impianto t1: temperatura modificata a 18.984827
+
+[2:29]	Impianto t1: temperatura modificata a 18.984827
+
+[2:30]	Impianto t1: temperatura modificata a 18.984827
+
+[2:31]	Impianto t1: temperatura modificata a 18.984827
+
+[2:32]	Impianto t1: temperatura modificata a 18.984827
+
+[2:33]	Impianto t1: temperatura modificata a 18.984827
+
+[2:34]	Impianto t1: temperatura modificata a 18.984827
+
+[2:35]	Impianto t1: temperatura modificata a 18.984827
+
+[2:36]	Impianto t1: temperatura modificata a 18.984827
+
+[2:37]	Impianto t1: temperatura modificata a 18.984827
+
+[2:38]	Impianto t1: temperatura modificata a 18.984827
+
+[2:39]	Impianto t1: temperatura modificata a 18.984827
+
+[2:40]	Impianto t1: temperatura modificata a 18.984827
+
+[2:41]	Impianto t1: temperatura modificata a 18.984827
+
+[2:42]	Impianto t1: temperatura modificata a 18.984827
+
+[2:43]	Impianto t1: temperatura modificata a 18.984827
+
+[2:44]	Impianto t1: temperatura modificata a 18.984827
+
+[2:45]	Impianto t1: temperatura modificata a 18.984827
+
+[2:46]	Impianto t1: temperatura modificata a 18.984827
+
+[2:47]	Impianto t1: temperatura modificata a 18.984827
+
+[2:48]	Impianto t1: temperatura modificata a 18.984827
+
+[2:49]	Impianto t1: temperatura modificata a 18.984827
+
+[2:50]	Impianto t1: temperatura modificata a 18.984827
+
+[2:51]	Impianto t1: temperatura modificata a 18.984827
+
+[2:52]	Impianto t1: temperatura modificata a 18.984827
+
+[2:53]	Impianto t1: temperatura modificata a 18.984827
+
+[2:54]	Impianto t1: temperatura modificata a 18.984827
+
+[2:55]	Impianto t1: temperatura modificata a 18.984827
+
+[2:56]	Impianto t1: temperatura modificata a 18.984827
+
+[2:57]	Impianto t1: temperatura modificata a 18.984827
+
+[2:58]	Impianto t1: temperatura modificata a 18.984827
+
+[2:59]	Impianto t1: temperatura modificata a 18.984827
+
+[3:0]	Impianto t1: temperatura modificata a 18.984827
+
+[3:1]	Impianto t1: temperatura modificata a 18.984827
+
+[3:2]	Impianto t1: temperatura modificata a 18.984827
+
+[3:3]	Impianto t1: temperatura modificata a 18.984827
+
+[3:4]	Impianto t1: temperatura modificata a 18.984827
+
+[3:5]	Impianto t1: temperatura modificata a 18.984827
+
+[3:6]	Impianto t1: temperatura modificata a 18.984827
+
+[3:7]	Impianto t1: temperatura modificata a 18.984827
+
+[3:8]	Impianto t1: temperatura modificata a 18.984827
+
+[3:9]	Impianto t1: temperatura modificata a 18.984827
+
+[3:10]	Impianto t1: temperatura modificata a 18.984827
+
+[3:11]	Impianto t1: temperatura modificata a 18.984827
+
+[3:12]	Impianto t1: temperatura modificata a 18.984827
+
+[3:13]	Impianto t1: temperatura modificata a 18.984827
+
+[3:14]	Impianto t1: temperatura modificata a 18.984827
+
+[3:15]	Impianto t1: temperatura modificata a 18.984827
+
+[3:16]	Impianto t1: temperatura modificata a 18.984827
+
+[3:17]	Impianto t1: temperatura modificata a 18.984827
+
+[3:18]	Impianto t1: temperatura modificata a 18.984827
+
+[3:19]	Impianto t1: temperatura modificata a 18.984827
+
+[3:20]	Impianto t1: temperatura modificata a 18.984827
+
+[3:21]	Impianto t1: temperatura modificata a 18.984827
+
+[3:22]	Impianto t1: temperatura modificata a 18.984827
+
+[3:23]	Impianto t1: temperatura modificata a 18.984827
+
+[3:24]	Impianto t1: temperatura modificata a 18.984827
+
+[3:25]	Impianto t1: temperatura modificata a 18.984827
+
+[3:26]	Impianto t1: temperatura modificata a 18.984827
+
+[3:27]	Impianto t1: temperatura modificata a 18.984827
+
+[3:28]	Impianto t1: temperatura modificata a 18.984827
+
+[3:29]	Impianto t1: temperatura modificata a 18.984827
+
+[3:30]	Impianto t1: temperatura modificata a 18.984827
+
+[3:31]	Impianto t1: temperatura modificata a 18.984827
+
+[3:32]	Impianto t1: temperatura modificata a 18.984827
+
+[3:33]	Impianto t1: temperatura modificata a 18.984827
+
+[3:34]	Impianto t1: temperatura modificata a 18.984827
+
+[3:35]	Impianto t1: temperatura modificata a 18.984827
+
+[3:36]	Impianto t1: temperatura modificata a 18.984827
+
+[3:37]	Impianto t1: temperatura modificata a 18.984827
+
+[3:38]	Impianto t1: temperatura modificata a 18.984827
+
+[3:39]	Impianto t1: temperatura modificata a 18.984827
+
+[3:40]	Impianto t1: temperatura modificata a 18.984827
+
+[3:41]	Impianto t1: temperatura modificata a 18.984827
+
+[3:42]	Impianto t1: temperatura modificata a 18.984827
+
+[3:43]	Impianto t1: temperatura modificata a 18.984827
+
+[3:44]	Impianto t1: temperatura modificata a 18.984827
+
+[3:45]	Impianto t1: temperatura modificata a 18.984827
+
+[3:46]	Impianto t1: temperatura modificata a 18.984827
+
+[3:47]	Impianto t1: temperatura modificata a 18.984827
+
+[3:48]	Impianto t1: temperatura modificata a 18.984827
+
+[3:49]	Impianto t1: temperatura modificata a 18.984827
+
+[3:50]	Impianto t1: temperatura modificata a 18.984827
+
+[3:51]	Impianto t1: temperatura modificata a 18.984827
+
+[3:52]	Impianto t1: temperatura modificata a 18.984827
+
+[3:53]	Impianto t1: temperatura modificata a 18.984827
+
+[3:54]	Impianto t1: temperatura modificata a 18.984827
+
+[3:55]	Impianto t1: temperatura modificata a 18.984827
+
+[3:56]	Impianto t1: temperatura modificata a 18.984827
+
+[3:57]	Impianto t1: temperatura modificata a 18.984827
+
+[3:58]	Impianto t1: temperatura modificata a 18.984827
+
+[3:59]	Impianto t1: temperatura modificata a 18.984827
+
+[4:0]	Impianto t1: temperatura modificata a 18.984827
+
+[4:1]	Impianto t1: temperatura modificata a 18.984827
+
+[4:2]	Impianto t1: temperatura modificata a 18.984827
+
+[4:3]	Impianto t1: temperatura modificata a 18.984827
+
+[4:4]	Impianto t1: temperatura modificata a 18.984827
+
+[4:5]	Impianto t1: temperatura modificata a 18.984827
+
+[4:6]	Impianto t1: temperatura modificata a 18.984827
+
+[4:7]	Impianto t1: temperatura modificata a 18.984827
+
+[4:8]	Impianto t1: temperatura modificata a 18.984827
+
+[4:9]	Impianto t1: temperatura modificata a 18.984827
+
+[4:10]	Impianto t1: temperatura modificata a 18.984827
+
+[4:11]	Impianto t1: temperatura modificata a 18.984827
+
+[4:12]	Impianto t1: temperatura modificata a 18.984827
+
+[4:13]	Impianto t1: temperatura modificata a 18.984827
+
+[4:14]	Impianto t1: temperatura modificata a 18.984827
+
+[4:15]	Impianto t1: temperatura modificata a 18.984827
+
+[4:16]	Impianto t1: temperatura modificata a 18.984827
+
+[4:17]	Impianto t1: temperatura modificata a 18.984827
+
+[4:18]	Impianto t1: temperatura modificata a 18.984827
+
+[4:19]	Impianto t1: temperatura modificata a 18.984827
+
+[4:20]	Impianto t1: temperatura modificata a 18.984827
+
+[4:21]	Impianto t1: temperatura modificata a 18.984827
+
+[4:22]	Impianto t1: temperatura modificata a 18.984827
+
+[4:23]	Impianto t1: temperatura modificata a 18.984827
+
+[4:24]	Impianto t1: temperatura modificata a 18.984827
+
+[4:25]	Impianto t1: temperatura modificata a 18.984827
+
+[4:26]	Impianto t1: temperatura modificata a 18.984827
+
+[4:27]	Impianto t1: temperatura modificata a 18.984827
+
+[4:28]	Impianto t1: temperatura modificata a 18.984827
+
+[4:29]	Impianto t1: temperatura modificata a 18.984827
+
+[4:30]	Impianto t1: temperatura modificata a 18.984827
+
+[4:31]	Impianto t1: temperatura modificata a 18.984827
+
+[4:32]	Impianto t1: temperatura modificata a 18.984827
+
+[4:33]	Impianto t1: temperatura modificata a 18.984827
+
+[4:34]	Impianto t1: temperatura modificata a 18.984827
+
+[4:35]	Impianto t1: temperatura modificata a 18.984827
+
+[4:36]	Impianto t1: temperatura modificata a 18.984827
+
+[4:37]	Impianto t1: temperatura modificata a 18.984827
+
+[4:38]	Impianto t1: temperatura modificata a 18.984827
+
+[4:39]	Impianto t1: temperatura modificata a 18.984827
+
+[4:40]	Impianto t1: temperatura modificata a 18.984827
+
+[4:41]	Impianto t1: temperatura modificata a 18.984827
+
+[4:42]	Impianto t1: temperatura modificata a 18.984827
+
+[4:43]	Impianto t1: temperatura modificata a 18.984827
+
+[4:44]	Impianto t1: temperatura modificata a 18.984827
+
+[4:45]	Impianto t1: temperatura modificata a 18.984827
+
+[4:46]	Impianto t1: temperatura modificata a 18.984827
+
+[4:47]	Impianto t1: temperatura modificata a 18.984827
+
+[4:48]	Impianto t1: temperatura modificata a 18.984827
+
+[4:49]	Impianto t1: temperatura modificata a 18.984827
+
+[4:50]	Impianto t1: temperatura modificata a 18.984827
+
+[4:51]	Impianto t1: temperatura modificata a 18.984827
+
+[4:52]	Impianto t1: temperatura modificata a 18.984827
+
+[4:53]	Impianto t1: temperatura modificata a 18.984827
+
+[4:54]	Impianto t1: temperatura modificata a 18.984827
+
+[4:55]	Impianto t1: temperatura modificata a 18.984827
+
+[4:56]	Impianto t1: temperatura modificata a 18.984827
+
+[4:57]	Impianto t1: temperatura modificata a 18.984827
+
+[4:58]	Impianto t1: temperatura modificata a 18.984827
+
+[4:59]	Impianto t1: temperatura modificata a 18.984827
+
+[5:0]	Impianto t1: temperatura modificata a 18.984827
+
+[5:1]	Impianto t1: temperatura modificata a 18.984827
+
+[5:2]	Impianto t1: temperatura modificata a 18.984827
+
+[5:3]	Impianto t1: temperatura modificata a 18.984827
+
+[5:4]	Impianto t1: temperatura modificata a 18.984827
+
+[5:5]	Impianto t1: temperatura modificata a 18.984827
+
+[5:6]	Impianto t1: temperatura modificata a 18.984827
+
+[5:7]	Impianto t1: temperatura modificata a 18.984827
+
+[5:8]	Impianto t1: temperatura modificata a 18.984827
+
+[5:9]	Impianto t1: temperatura modificata a 18.984827
+
+[5:10]	Impianto t1: temperatura modificata a 18.984827
+
+[5:11]	Impianto t1: temperatura modificata a 18.984827
+
+[5:12]	Impianto t1: temperatura modificata a 18.984827
+
+[5:13]	Impianto t1: temperatura modificata a 18.984827
+
+[5:14]	Impianto t1: temperatura modificata a 18.984827
+
+[5:15]	Impianto t1: temperatura modificata a 18.984827
+
+[5:16]	Impianto t1: temperatura modificata a 18.984827
+
+[5:17]	Impianto t1: temperatura modificata a 18.984827
+
+[5:18]	Impianto t1: temperatura modificata a 18.984827
+
+[5:19]	Impianto t1: temperatura modificata a 18.984827
+
+[5:20]	Impianto t1: temperatura modificata a 18.984827
+
+[5:21]	Impianto t1: temperatura modificata a 18.984827
+
+[5:22]	Impianto t1: temperatura modificata a 18.984827
+
+[5:23]	Impianto t1: temperatura modificata a 18.984827
+
+[5:24]	Impianto t1: temperatura modificata a 18.984827
+
+[5:25]	Impianto t1: temperatura modificata a 18.984827
+
+[5:26]	Impianto t1: temperatura modificata a 18.984827
+
+[5:27]	Impianto t1: temperatura modificata a 18.984827
+
+[5:28]	Impianto t1: temperatura modificata a 18.984827
+
+[5:29]	Impianto t1: temperatura modificata a 18.984827
+
+[5:30]	Impianto t1: temperatura modificata a 18.984827
+
+[5:31]	Impianto t1: temperatura modificata a 18.984827
+
+[5:32]	Impianto t1: temperatura modificata a 18.984827
+
+[5:33]	Impianto t1: temperatura modificata a 18.984827
+
+[5:34]	Impianto t1: temperatura modificata a 18.984827
+
+[5:35]	Impianto t1: temperatura modificata a 18.984827
+
+[5:36]	Impianto t1: temperatura modificata a 18.984827
+
+[5:37]	Impianto t1: temperatura modificata a 18.984827
+
+[5:38]	Impianto t1: temperatura modificata a 18.984827
+
+[5:39]	Impianto t1: temperatura modificata a 18.984827
+
+[5:40]	Impianto t1: temperatura modificata a 18.984827
+
+[5:41]	Impianto t1: temperatura modificata a 18.984827
+
+[5:42]	Impianto t1: temperatura modificata a 18.984827
+
+[5:43]	Impianto t1: temperatura modificata a 18.984827
+
+[5:44]	Impianto t1: temperatura modificata a 18.984827
+
+[5:45]	Impianto t1: temperatura modificata a 18.984827
+
+[5:46]	Impianto t1: temperatura modificata a 18.984827
+
+[5:47]	Impianto t1: temperatura modificata a 18.984827
+
+[5:48]	Impianto t1: temperatura modificata a 18.984827
+
+[5:49]	Impianto t1: temperatura modificata a 18.984827
+
+[5:50]	Impianto t1: temperatura modificata a 18.984827
+
+[5:51]	Impianto t1: temperatura modificata a 18.984827
+
+[5:52]	Impianto t1: temperatura modificata a 18.984827
+
+[5:53]	Impianto t1: temperatura modificata a 18.984827
+
+[5:54]	Impianto t1: temperatura modificata a 18.984827
+
+[5:55]	Impianto t1: temperatura modificata a 18.984827
+
+[5:56]	Impianto t1: temperatura modificata a 18.984827
+
+[5:57]	Impianto t1: temperatura modificata a 18.984827
+
+[5:58]	Impianto t1: temperatura modificata a 18.984827
+
+[5:59]	Impianto t1: temperatura modificata a 18.984827
+
+[6:0]	Impianto t1: temperatura modificata a 18.984827
+
+[6:1]	Impianto t1: temperatura modificata a 18.984827
+
+[6:2]	Impianto t1: temperatura modificata a 18.984827
+
+[6:3]	Impianto t1: temperatura modificata a 18.984827
+
+[6:4]	Impianto t1: temperatura modificata a 18.984827
+
+[6:5]	Impianto t1: temperatura modificata a 18.984827
+
+[6:6]	Impianto t1: temperatura modificata a 18.984827
+
+[6:7]	Impianto t1: temperatura modificata a 18.984827
+
+[6:8]	Impianto t1: temperatura modificata a 18.984827
+
+[6:9]	Impianto t1: temperatura modificata a 18.984827
+
+[6:10]	Impianto t1: temperatura modificata a 18.984827
+
+[6:11]	Impianto t1: temperatura modificata a 18.984827
+
+[6:12]	Impianto t1: temperatura modificata a 18.984827
+
+[6:13]	Impianto t1: temperatura modificata a 18.984827
+
+[6:14]	Impianto t1: temperatura modificata a 18.984827
+
+[6:15]	Impianto t1: temperatura modificata a 18.984827
+
+[6:16]	Impianto t1: temperatura modificata a 18.984827
+
+[6:17]	Impianto t1: temperatura modificata a 18.984827
+
+[6:18]	Impianto t1: temperatura modificata a 18.984827
+
+[6:19]	Impianto t1: temperatura modificata a 18.984827
+
+[6:20]	Impianto t1: temperatura modificata a 18.984827
+
+[6:21]	Impianto t1: temperatura modificata a 18.984827
+
+[6:22]	Impianto t1: temperatura modificata a 18.984827
+
+[6:23]	Impianto t1: temperatura modificata a 18.984827
+
+[6:24]	Impianto t1: temperatura modificata a 18.984827
+
+[6:25]	Impianto t1: temperatura modificata a 18.984827
+
+[6:26]	Impianto t1: temperatura modificata a 18.984827
+
+[6:27]	Impianto t1: temperatura modificata a 18.984827
+
+[6:28]	Impianto t1: temperatura modificata a 18.984827
+
+[6:29]	Impianto t1: temperatura modificata a 18.984827
+
+[6:30]	Impianto t1: temperatura modificata a 18.984827
+
+[6:31]	Impianto t1: temperatura modificata a 18.984827
+
+[6:32]	Impianto t1: temperatura modificata a 18.984827
+
+[6:33]	Impianto t1: temperatura modificata a 18.984827
+
+[6:34]	Impianto t1: temperatura modificata a 18.984827
+
+[6:35]	Impianto t1: temperatura modificata a 18.984827
+
+[6:36]	Impianto t1: temperatura modificata a 18.984827
+
+[6:37]	Impianto t1: temperatura modificata a 18.984827
+
+[6:38]	Impianto t1: temperatura modificata a 18.984827
+
+[6:39]	Impianto t1: temperatura modificata a 18.984827
+
+[6:40]	Impianto t1: temperatura modificata a 18.984827
+
+[6:41]	Impianto t1: temperatura modificata a 18.984827
+
+[6:42]	Impianto t1: temperatura modificata a 18.984827
+
+[6:43]	Impianto t1: temperatura modificata a 18.984827
+
+[6:44]	Impianto t1: temperatura modificata a 18.984827
+
+[6:45]	Impianto t1: temperatura modificata a 18.984827
+
+[6:46]	Impianto t1: temperatura modificata a 18.984827
+
+[6:47]	Impianto t1: temperatura modificata a 18.984827
+
+[6:48]	Impianto t1: temperatura modificata a 18.984827
+
+[6:49]	Impianto t1: temperatura modificata a 18.984827
+
+[6:50]	Impianto t1: temperatura modificata a 18.984827
+
+[6:51]	Impianto t1: temperatura modificata a 18.984827
+
+[6:52]	Impianto t1: temperatura modificata a 18.984827
+
+[6:53]	Impianto t1: temperatura modificata a 18.984827
+
+[6:54]	Impianto t1: temperatura modificata a 18.984827
+
+[6:55]	Impianto t1: temperatura modificata a 18.984827
+
+[6:56]	Impianto t1: temperatura modificata a 18.984827
+
+[6:57]	Impianto t1: temperatura modificata a 18.984827
+
+[6:58]	Impianto t1: temperatura modificata a 18.984827
+
+[6:59]	Impianto t1: temperatura modificata a 18.984827
+
+[7:0]	Impianto t1: temperatura modificata a 18.984827
+
+[7:1]	Impianto t1: temperatura modificata a 18.984827
+
+[7:2]	Impianto t1: temperatura modificata a 18.984827
+
+[7:3]	Impianto t1: temperatura modificata a 18.984827
+
+[7:4]	Impianto t1: temperatura modificata a 18.984827
+
+[7:5]	Impianto t1: temperatura modificata a 18.984827
+
+[7:6]	Impianto t1: temperatura modificata a 18.984827
+
+[7:7]	Impianto t1: temperatura modificata a 18.984827
+
+[7:8]	Impianto t1: temperatura modificata a 18.984827
+
+[7:9]	Impianto t1: temperatura modificata a 18.984827
+
+[7:10]	Impianto t1: temperatura modificata a 18.984827
+
+[7:11]	Impianto t1: temperatura modificata a 18.984827
+
+[7:12]	Impianto t1: temperatura modificata a 18.984827
+
+[7:13]	Impianto t1: temperatura modificata a 18.984827
+
+[7:14]	Impianto t1: temperatura modificata a 18.984827
+
+[7:15]	Impianto t1: temperatura modificata a 18.984827
+
+[7:16]	Impianto t1: temperatura modificata a 18.984827
+
+[7:17]	Impianto t1: temperatura modificata a 18.984827
+
+[7:18]	Impianto t1: temperatura modificata a 18.984827
+
+[7:19]	Impianto t1: temperatura modificata a 18.984827
+
+[7:20]	Impianto t1: temperatura modificata a 18.984827
+
+[7:21]	Impianto t1: temperatura modificata a 18.984827
+
+[7:22]	Impianto t1: temperatura modificata a 18.984827
+
+[7:23]	Impianto t1: temperatura modificata a 18.984827
+
+[7:24]	Impianto t1: temperatura modificata a 18.984827
+
+[7:25]	Impianto t1: temperatura modificata a 18.984827
+
+[7:26]	Impianto t1: temperatura modificata a 18.984827
+
+[7:27]	Impianto t1: temperatura modificata a 18.984827
+
+[7:28]	Impianto t1: temperatura modificata a 18.984827
+
+[7:29]	Impianto t1: temperatura modificata a 18.984827
+
+[7:30]	Impianto t1: temperatura modificata a 18.984827
+
+[7:31]	Impianto t1: temperatura modificata a 18.984827
+
+[7:32]	Impianto t1: temperatura modificata a 18.984827
+
+[7:33]	Impianto t1: temperatura modificata a 18.984827
+
+[7:34]	Impianto t1: temperatura modificata a 18.984827
+
+[7:35]	Impianto t1: temperatura modificata a 18.984827
+
+[7:36]	Impianto t1: temperatura modificata a 18.984827
+
+[7:37]	Impianto t1: temperatura modificata a 18.984827
+
+[7:38]	Impianto t1: temperatura modificata a 18.984827
+
+[7:39]	Impianto t1: temperatura modificata a 18.984827
+
+[7:40]	Impianto t1: temperatura modificata a 18.984827
+
+[7:41]	Impianto t1: temperatura modificata a 18.984827
+
+[7:42]	Impianto t1: temperatura modificata a 18.984827
+
+[7:43]	Impianto t1: temperatura modificata a 18.984827
+
+[7:44]	Impianto t1: temperatura modificata a 18.984827
+
+[7:45]	Impianto t1: temperatura modificata a 18.984827
+
+[7:46]	Impianto t1: temperatura modificata a 18.984827
+
+[7:47]	Impianto t1: temperatura modificata a 18.984827
+
+[7:48]	Impianto t1: temperatura modificata a 18.984827
+
+[7:49]	Impianto t1: temperatura modificata a 18.984827
+
+[7:50]	Impianto t1: temperatura modificata a 18.984827
+
+[7:51]	Impianto t1: temperatura modificata a 18.984827
+
+[7:52]	Impianto t1: temperatura modificata a 18.984827
+
+[7:53]	Impianto t1: temperatura modificata a 18.984827
+
+[7:54]	Impianto t1: temperatura modificata a 18.984827
+
+[7:55]	Impianto t1: temperatura modificata a 18.984827
+
+[7:56]	Impianto t1: temperatura modificata a 18.984827
+
+[7:57]	Impianto t1: temperatura modificata a 18.984827
+
+[7:58]	Impianto t1: temperatura modificata a 18.984827
+
+[7:59]	Impianto t1: temperatura modificata a 18.984827
+
+[8:0]	Impianto t1: temperatura modificata a 18.984827
+
+[8:1]	Impianto t1: temperatura modificata a 18.984827
+
+[8:2]	Impianto t1: temperatura modificata a 18.984827
+
+[8:3]	Impianto t1: temperatura modificata a 18.984827
+
+[8:4]	Impianto t1: temperatura modificata a 18.984827
+
+[8:5]	Impianto t1: temperatura modificata a 18.984827
+
+[8:6]	Impianto t1: temperatura modificata a 18.984827
+
+[8:7]	Impianto t1: temperatura modificata a 18.984827
+
+[8:8]	Impianto t1: temperatura modificata a 18.984827
+
+[8:9]	Impianto t1: temperatura modificata a 18.984827
+
+[8:10]	Impianto t1: temperatura modificata a 18.984827
+
+[8:11]	Impianto t1: temperatura modificata a 18.984827
+
+[8:12]	Impianto t1: temperatura modificata a 18.984827
+
+[8:13]	Impianto t1: temperatura modificata a 18.984827
+
+[8:14]	Impianto t1: temperatura modificata a 18.984827
+
+[8:15]	Impianto t1: temperatura modificata a 18.984827
+
+[8:16]	Impianto t1: temperatura modificata a 18.984827
+
+[8:17]	Impianto t1: temperatura modificata a 18.984827
+
+[8:18]	Impianto t1: temperatura modificata a 18.984827
+
+[8:19]	Impianto t1: temperatura modificata a 18.984827
+
+[8:20]	Impianto t1: temperatura modificata a 18.984827
+
+[8:21]	Impianto t1: temperatura modificata a 18.984827
+
+[8:22]	Impianto t1: temperatura modificata a 18.984827
+
+[8:23]	Impianto t1: temperatura modificata a 18.984827
+
+[8:24]	Impianto t1: temperatura modificata a 18.984827
+
+[8:25]	Impianto t1: temperatura modificata a 18.984827
+
+[8:26]	Impianto t1: temperatura modificata a 18.984827
+
+[8:27]	Impianto t1: temperatura modificata a 18.984827
+
+[8:28]	Impianto t1: temperatura modificata a 18.984827
+
+[8:29]	Impianto t1: temperatura modificata a 18.984827
+
+[8:30]	Impianto t1: temperatura modificata a 18.984827
+
+[8:31]	Impianto t1: temperatura modificata a 18.984827
+
+[8:32]	Impianto t1: temperatura modificata a 18.984827
+
+[8:33]	Impianto t1: temperatura modificata a 18.984827
+
+[8:34]	Impianto t1: temperatura modificata a 18.984827
+
+[8:35]	Impianto t1: temperatura modificata a 18.984827
+
+[8:36]	Impianto t1: temperatura modificata a 18.984827
+
+[8:37]	Impianto t1: temperatura modificata a 18.984827
+
+[8:38]	Impianto t1: temperatura modificata a 18.984827
+
+[8:39]	Impianto t1: temperatura modificata a 18.984827
+
+[8:40]	Impianto t1: temperatura modificata a 18.984827
+
+[8:41]	Impianto t1: temperatura modificata a 18.984827
+
+[8:42]	Impianto t1: temperatura modificata a 18.984827
+
+[8:43]	Impianto t1: temperatura modificata a 18.984827
+
+[8:44]	Impianto t1: temperatura modificata a 18.984827
+
+[8:45]	Impianto t1: temperatura modificata a 18.984827
+
+[8:46]	Impianto t1: temperatura modificata a 18.984827
+
+[8:47]	Impianto t1: temperatura modificata a 18.984827
+
+[8:48]	Impianto t1: temperatura modificata a 18.984827
+
+[8:49]	Impianto t1: temperatura modificata a 18.984827
+
+[8:50]	Impianto t1: temperatura modificata a 18.984827
+
+[8:51]	Impianto t1: temperatura modificata a 18.984827
+
+[8:52]	Impianto t1: temperatura modificata a 18.984827
+
+[8:53]	Impianto t1: temperatura modificata a 18.984827
+
+[8:54]	Impianto t1: temperatura modificata a 18.984827
+
+[8:55]	Impianto t1: temperatura modificata a 18.984827
+
+[8:56]	Impianto t1: temperatura modificata a 18.984827
+
+[8:57]	Impianto t1: temperatura modificata a 18.984827
+
+[8:58]	Impianto t1: temperatura modificata a 18.984827
+
+[8:59]	Impianto t1: temperatura modificata a 18.984827
+
+[9:0]	Impianto t1: temperatura modificata a 18.984827
+
+[0:0]	Aggiornamento orario (minuto per minuto)
+
+[0:0]	Orario del comando: 0:0
+
+[0:0]	Orario del comando: 0:0
+
+[0:1]	Impianto t1 acceso con temperatura: 30.000000
+
+[0:2]	Impianto t1: temperatura modificata a 27.989950
+
+[0:3]	Impianto t1: temperatura modificata a 27.989950
+
+[0:4]	Impianto t1: temperatura modificata a 27.989950
+
+[0:5]	Impianto t1: temperatura modificata a 27.989950
+
+[0:6]	Impianto t1: temperatura modificata a 27.989950
+
+[0:7]	Impianto t1: temperatura modificata a 27.989950
+
+[0:8]	Impianto t1: temperatura modificata a 27.989950
+
+[0:9]	Impianto t1: temperatura modificata a 27.989950
+
+[0:10]	Impianto t1: temperatura modificata a 27.989950
+
+[0:11]	Impianto t1: temperatura modificata a 27.989950
+
+[0:12]	Impianto t1: temperatura modificata a 27.989950
+
+[0:13]	Impianto t1: temperatura modificata a 27.989950
+
+[0:14]	Impianto t1: temperatura modificata a 27.989950
+
+[0:15]	Impianto t1: temperatura modificata a 27.989950
+
+[0:16]	Impianto t1: temperatura modificata a 27.989950
+
+[0:17]	Impianto t1: temperatura modificata a 27.989950
+
+[0:18]	Impianto t1: temperatura modificata a 27.989950
+
+[0:19]	Impianto t1: temperatura modificata a 27.989950
+
+[0:20]	Impianto t1: temperatura modificata a 27.989950
+
+[0:21]	Impianto t1: temperatura modificata a 27.989950
+
+[0:22]	Impianto t1: temperatura modificata a 27.989950
+
+[0:23]	Impianto t1: temperatura modificata a 27.989950
+
+[0:24]	Impianto t1: temperatura modificata a 27.989950
+
+[0:25]	Impianto t1: temperatura modificata a 27.989950
+
+[0:26]	Impianto t1: temperatura modificata a 27.989950
+
+[0:27]	Impianto t1: temperatura modificata a 27.989950
+
+[0:28]	Impianto t1: temperatura modificata a 27.989950
+
+[0:29]	Impianto t1: temperatura modificata a 27.989950
+
+[0:30]	Impianto t1: temperatura modificata a 27.989950
+
+[0:31]	Impianto t1: temperatura modificata a 27.989950
+
+[0:32]	Impianto t1: temperatura modificata a 27.989950
+
+[0:33]	Impianto t1: temperatura modificata a 27.989950
+
+[0:34]	Impianto t1: temperatura modificata a 27.989950
+
+[0:35]	Impianto t1: temperatura modificata a 27.989950
+
+[0:36]	Impianto t1: temperatura modificata a 27.989950
+
+[0:37]	Impianto t1: temperatura modificata a 27.989950
+
+[0:38]	Impianto t1: temperatura modificata a 27.989950
+
+[0:39]	Impianto t1: temperatura modificata a 27.989950
+
+[0:40]	Impianto t1: temperatura modificata a 27.989950
+
+[0:41]	Impianto t1: temperatura modificata a 27.989950
+
+[0:42]	Impianto t1: temperatura modificata a 27.989950
+
+[0:43]	Impianto t1: temperatura modificata a 27.989950
+
+[0:44]	Impianto t1: temperatura modificata a 27.989950
+
+[0:45]	Impianto t1: temperatura modificata a 27.989950
+
+[0:46]	Impianto t1: temperatura modificata a 27.989950
+
+[0:47]	Impianto t1: temperatura modificata a 27.989950
+
+[0:48]	Impianto t1: temperatura modificata a 27.989950
+
+[0:49]	Impianto t1: temperatura modificata a 27.989950
+
+[0:50]	Impianto t1: temperatura modificata a 27.989950
+
+[0:51]	Impianto t1: temperatura modificata a 27.989950
+
+[0:52]	Impianto t1: temperatura modificata a 27.989950
+
+[0:53]	Impianto t1: temperatura modificata a 27.989950
+
+[0:54]	Impianto t1: temperatura modificata a 27.989950
+
+[0:55]	Impianto t1: temperatura modificata a 27.989950
+
+[0:56]	Impianto t1: temperatura modificata a 27.989950
+
+[0:57]	Impianto t1: temperatura modificata a 27.989950
+
+[0:58]	Impianto t1: temperatura modificata a 27.989950
+
+[0:59]	Impianto t1: temperatura modificata a 27.989950
+
+[1:0]	Impianto t1: temperatura modificata a 27.989950
+
+[1:1]	Impianto t1: temperatura modificata a 27.989950
+
+[1:2]	Impianto t1: temperatura modificata a 27.989950
+
+[1:3]	Impianto t1: temperatura modificata a 27.989950
+
+[1:4]	Impianto t1: temperatura modificata a 27.989950
+
+[1:5]	Impianto t1: temperatura modificata a 27.989950
+
+[1:6]	Impianto t1: temperatura modificata a 27.989950
+
+[1:7]	Impianto t1: temperatura modificata a 27.989950
+
+[1:8]	Impianto t1: temperatura modificata a 27.989950
+
+[1:9]	Impianto t1: temperatura modificata a 27.989950
+
+[1:10]	Impianto t1: temperatura modificata a 27.989950
+
+[1:11]	Impianto t1: temperatura modificata a 27.989950
+
+[1:12]	Impianto t1: temperatura modificata a 27.989950
+
+[1:13]	Impianto t1: temperatura modificata a 27.989950
+
+[1:14]	Impianto t1: temperatura modificata a 27.989950
+
+[1:15]	Impianto t1: temperatura modificata a 27.989950
+
+[1:16]	Impianto t1: temperatura modificata a 27.989950
+
+[1:17]	Impianto t1: temperatura modificata a 27.989950
+
+[1:18]	Impianto t1: temperatura modificata a 27.989950
+
+[1:19]	Impianto t1: temperatura modificata a 27.989950
+
+[1:20]	Impianto t1: temperatura modificata a 27.989950
+
+[1:21]	Impianto t1: temperatura modificata a 27.989950
+
+[1:22]	Impianto t1: temperatura modificata a 27.989950
+
+[1:23]	Impianto t1: temperatura modificata a 27.989950
+
+[1:24]	Impianto t1: temperatura modificata a 27.989950
+
+[1:25]	Impianto t1: temperatura modificata a 27.989950
+
+[1:26]	Impianto t1: temperatura modificata a 27.989950
+
+[1:27]	Impianto t1: temperatura modificata a 27.989950
+
+[1:28]	Impianto t1: temperatura modificata a 27.989950
+
+[1:29]	Impianto t1: temperatura modificata a 27.989950
+
+[1:30]	Impianto t1: temperatura modificata a 27.989950
+
+[1:30]	Impianto manuale m1 acceso
+
+[1:31]	Impianto t1: temperatura modificata a 27.989950
+
+[1:32]	Impianto t1: temperatura modificata a 27.989950
+
+[1:33]	Impianto t1: temperatura modificata a 27.989950
+
+[1:34]	Impianto t1: temperatura modificata a 27.989950
+
+[1:35]	Impianto t1: temperatura modificata a 27.989950
+
+[1:35]	Impianto manuale m1 spento
+
+[1:36]	Impianto t1: temperatura modificata a 27.989950
+
+[1:37]	Impianto t1: temperatura modificata a 27.989950
+
+[1:38]	Impianto t1: temperatura modificata a 27.989950
+
+[1:39]	Impianto t1: temperatura modificata a 27.989950
+
+[1:40]	Impianto t1: temperatura modificata a 27.989950
+
+[1:41]	Impianto t1: temperatura modificata a 27.989950
+
+[1:42]	Impianto t1: temperatura modificata a 27.989950
+
+[1:43]	Impianto t1: temperatura modificata a 27.989950
+
+[1:44]	Impianto t1: temperatura modificata a 27.989950
+
+[1:45]	Impianto t1: temperatura modificata a 27.989950
+
+[0:0]	Aggiornamento orario (minuto per minuto)
+
+[0:0]	Orario del comando: 0:0
+
+[0:1]	Impianto t1 acceso con temperatura: 27.989950
+
+[0:2]	Impianto t1: temperatura modificata a 27.989950
+
+[0:3]	Impianto t1: temperatura modificata a 27.989950
+
+[0:4]	Impianto t1: temperatura modificata a 27.989950
+
+[0:5]	Impianto t1: temperatura modificata a 27.989950
+
+[0:6]	Impianto t1: temperatura modificata a 27.989950
+
+[0:7]	Impianto t1: temperatura modificata a 27.989950
+
+[0:8]	Impianto t1: temperatura modificata a 27.989950
+
+[0:9]	Impianto t1: temperatura modificata a 27.989950
+
+[0:10]	Impianto t1: temperatura modificata a 27.989950
+
+[0:11]	Impianto t1: temperatura modificata a 27.989950
+
+[0:12]	Impianto t1: temperatura modificata a 27.989950
+
+[0:13]	Impianto t1: temperatura modificata a 27.989950
+
+[0:14]	Impianto t1: temperatura modificata a 27.989950
+
+[0:15]	Impianto t1: temperatura modificata a 27.989950
+
+[0:16]	Impianto t1: temperatura modificata a 27.989950
+
+[0:17]	Impianto t1: temperatura modificata a 27.989950
+
+[0:18]	Impianto t1: temperatura modificata a 27.989950
+
+[0:19]	Impianto t1: temperatura modificata a 27.989950
+
+[0:20]	Impianto t1: temperatura modificata a 27.989950
+
+[0:21]	Impianto t1: temperatura modificata a 27.989950
+
+[0:22]	Impianto t1: temperatura modificata a 27.989950
+
+[0:23]	Impianto t1: temperatura modificata a 27.989950
+
+[0:24]	Impianto t1: temperatura modificata a 27.989950
+
+[0:25]	Impianto t1: temperatura modificata a 27.989950
+
+[0:26]	Impianto t1: temperatura modificata a 27.989950
+
+[0:27]	Impianto t1: temperatura modificata a 27.989950
+
+[0:28]	Impianto t1: temperatura modificata a 27.989950
+
+[0:29]	Impianto t1: temperatura modificata a 27.989950
+
+[0:30]	Impianto t1: temperatura modificata a 27.989950
+
+[0:0]	Aggiornamento orario (minuto per minuto)
+

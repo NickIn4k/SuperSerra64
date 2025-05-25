@@ -1,7 +1,8 @@
 #include "ConTermometro.h"
+
 // Costruttore: inizializza nome impianto e soglie di accensione/spegnimento
 ConTermometro::ConTermometro(const std::string &Nome, float tempAccensione, float tempSpegnimento): Impianto(Nome), tempAccensione{tempAccensione}, tempSpegnimento {tempSpegnimento} {
-    tempAttuale = 20.0f;                     // temperatura iniziale
+    tempAttuale = 28.0f;                     // temperatura iniziale
     ultimoAggiornamento = Time(0,0);   // inizializza orario dell'ultimo aggiornamento
 }
 
@@ -15,11 +16,12 @@ std::string ConTermometro::Spegni() {
 std::string ConTermometro::Accendi(Time now) {
     this->acceso = true;
     this->ultimaAccensione = now;
-    return "Impianto acceso alle ore: " + now.getTime() + " con temperatura: " + std::to_string(tempAttuale);
+    return "Impianto " + this->nome + " acceso con temperatura: " + std::to_string(tempAttuale);
 }
 
 // Metodo chiamato quando cambia l'orario per aggiornare lo stato in base alla temperatura
 std::string ConTermometro::OnTimeChanged(Time now) {
+    std::string msg = "";
     int diffMin;
     if(!acceso) {
         // Se spento, la temperatura scende leggermente
@@ -28,21 +30,27 @@ std::string ConTermometro::OnTimeChanged(Time now) {
         // Se la temperatura scende sotto la soglia, accendi l’impianto
         if(tempAttuale<=tempAccensione)
             return Accendi(now);
+
+        msg = "Impianto " + this->nome + ": temperatura modificata a " + std::to_string(this->tempAttuale);
     }
     else {
         // Se acceso, verifica quanto tempo è passato dall’ultimo aggiornamento
         diffMin = ultimoAggiornamento.DifferenzaMin(now);
+
         // Dopo almeno 60 minuti, aumenta la temperatura
-        if(diffMin >= 60)
+        if(diffMin >= 60) {
             tempAttuale+=randomFloat(0.75f, 1.0f);
+            msg = "Impianto " + this->nome + ": temperatura modificata a " + std::to_string(this->tempAttuale);
+        }
+
         // Se la temperatura supera la soglia, spegni l’impianto
         if(tempAttuale >= tempSpegnimento)
             return Spegni();
     }
-
     // Aggiorna l’orario dell’ultima modifica
     ultimoAggiornamento = now;
-    return "Impianto " + this->nome + ": temperatura modificata a " + std::to_string(this->tempAttuale);
+
+    return msg;
 }
 
 // Questo metodo non serve in questa classe => non c'è un timer da resettare!

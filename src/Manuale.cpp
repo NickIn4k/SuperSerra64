@@ -5,15 +5,16 @@ Manuale::Manuale(const std::string &Nome, Time Accensione, Time Spegnimento): Im
 // Spegne l'impianto e ritorna un messaggio con l'orario di spegnimento programmato
 std::string Manuale::Spegni() {
     this->acceso = false;
-    return "Impianto manuale spento alle ore: " + timerSpegnimento.getTime();
+    return "Impianto manuale " + this->nome + " spento";
 }
 
 // Accende l'impianto e salva l'orario di accensione (now)
 std::string Manuale::Accendi(Time now) {
     this->acceso = true;
     this->ultimaAccensione = now;
-    return "Impianto manuale acceso alle ore: " + now.getTime();
+    return "Impianto manuale " + this->nome + " acceso";
 }
+
 // Controlla se è arrivato il momento di accendere o spegnere l'impianto
 // (eseguito ogni minuto dalla serra)
 std::string Manuale::OnTimeChanged(Time now) {
@@ -21,7 +22,9 @@ std::string Manuale::OnTimeChanged(Time now) {
         return Accendi(now);
     if(acceso &&  now == this->timerSpegnimento)
         return Spegni();
+    return "";
 }
+
 // Resetta i timer riportando accensione e spegnimento a 00:00
 void Manuale::ResetTimers() {
     this->timerSpegnimento = Time(0,0);

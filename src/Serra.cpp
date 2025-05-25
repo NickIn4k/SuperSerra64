@@ -19,7 +19,10 @@ void Serra::setTime(int hour, int minute) {
         now++;
         //Ogni impianto controlla se deve accendersi/spegnersi con OnTimeChanged(now)
         for (auto it = impianti.begin(); it != impianti.end(); ++it) {
-            ui.logMessage(now,it->second->OnTimeChanged(now),0);
+            std::string msg = it->second->OnTimeChanged(now);
+            if (!msg.empty()) {
+                ui.logMessage(now, msg, 0);
+            }
         }
     }
 }
