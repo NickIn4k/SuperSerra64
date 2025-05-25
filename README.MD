@@ -10,7 +10,11 @@ Ogni impianto è legato a un tipo di pianta (tropicale, desertica, mediterranea,
 
 Tutti gli impianti derivano da una classe base comune, e vengono gestiti da una classe chiamata **Serra**, che tiene traccia di tutti gli impianti presenti. L’utente può interagire con il sistema tramite comandi scritti da terminale: ad esempio può accendere un impianto, impostare l’orario, o vedere lo stato della serra.
 
-Il progetto include anche una simulazione dell’orario, gestita dalla classe **Orario**, che permette di far avanzare il tempo e attivare gli impianti in automatico, come se passassero davvero le ore.
+Il progetto include anche una simulazione dell’orario, gestita dalla classe **Time**, che permette di far avanzare il tempo e attivare gli impianti in automatico, come se passassero davvero le ore.
+
+Inoltre, la classe **UserInterface** (fornita dal docente) è stata modificata, aggiungendo nuovi comandi come: 
+- **Help**      // Mostra all'utente tutti i comandi utilizzabili
+- **Exit**      // Termina il programma
 
 Suddivisione del lavoro:
 
@@ -18,4 +22,4 @@ Suddivisione del lavoro:
 - Caterina Hu ha sviluppato la classe Serra, che gestisce tutti gli impianti nella serra e ha fatto il main.
 - Iris Lagnarini ha creato la classe base Impianto da cui derivano tutti i tipi di impianti, e ha scritto il README.
 
-Il progetto è diviso in file, ben commentato e compilabile tramite CMake. Usa solo librerie standard del C++. Non ci sono eseguibili inclusi: il codice viene compilato al momento della correzione.
+Il progetto è diviso in file, ben commentato e compilabile tramite CMake.
