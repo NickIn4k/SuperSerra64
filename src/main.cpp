@@ -98,13 +98,7 @@ int main() {
         std::string comando;
         std::getline(cin, comando);
         ui.processCommand(comando, superSerra.getNow(), superSerra);
+    } while (true);
 
-        cout << "Vuoi terminare il programma? (si'/no): ";
-        cin >> risposta;
-        cin.ignore();
-    } while (risposta == "no" || risposta == "n");
-
-    ui.closeFile();
-    cout << "Programma terminato.\n";
     return 0;
 }

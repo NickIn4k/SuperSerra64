@@ -155,21 +155,26 @@ void UserInterface::processCommand(const std::string &command, const Time &now, 
                 "Errore: opzione 'reset' non valida. Usa: reset time | reset timers | reset all");
         }
     } else if (action == "help") {
-        std::ostringstream oss;
-        oss << "Comandi disponibili:\n"
-                << "  set <NOME> on              - Accende l'impianto manuale\n"
-                << "  set <NOME> off             - Spegne l'impianto manuale\n"
-                << "  set <NOME> <START>         - Imposta l'accensione automatica di un impianto manuale\n"
-                << "  set <NOME> <START> <STOP>  - Imposta l'accensione e lo speginmento dell'impianto automatico\n"
-                << "  rm <ID>                  - Rimuove l'impianto \n"
-                << "  show                     - Mostra lo stato e consumo di tutti gli impianti\n"
-                << "  show <NOME>                - Mostra lo stato e i dettagli di un impianto\n"
-                << "  set time <HH:MM>         - Imposta l'orario attuale della serra\n"
-                << "  reset time               - Resetta l'orario a [00:00] e spegne tutti gli impianti\n"
-                << "  reset timers             - Rimuove tutti i timer mantenendo lo stato attuale\n"
-                << "  reset all                - Resetta orario, timer e spegne tutti gli impianti";
-        logMessage(now, oss.str(), 0);
-    } else {
+        const std::string commands = R"(Comandi disponibili:
+        set <NOME> on              - Accende l'impianto manuale
+        set <NOME> off             - Spegne l'impianto manuale
+        set <NOME> <START>         - Imposta l'accensione automatica di un impianto manuale
+        set <NOME> <START> <STOP>  - Imposta l'accensione e lo speginmento dell'impianto automatico
+        rm <ID>                    - Rimuove l'impianto
+        show                       - Mostra lo stato e consumo di tutti gli impianti
+        show <NOME>                - Mostra lo stato e i dettagli di un impianto
+        set time <HH:MM>           - Imposta l'orario attuale della serra
+        reset time                 - Resetta l'orario a [00:00] e spegne tutti gli impianti
+        reset timers               - Rimuove tutti i timer mantenendo lo stato attuale
+        reset all                  - Resetta orario, timer e spegne tutti gli impianti
+        exit                       - Termina l'esecuzione
+        )";
+        logMessage(now, commands, 0);
+    } else if(action == "exit") {
+        logMessage(now, "Uscita dal programma.", 0);
+        closeFile();    // Forzare la chiusura file
+        std::exit(EXIT_SUCCESS);    // Esecuzione terminata
+    }else {
         throw std::invalid_argument("Errore: comando '" + action + "' non riconosciuto.");
     }
 }
