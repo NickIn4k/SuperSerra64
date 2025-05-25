@@ -21,38 +21,35 @@ std::string ConTermometro::Accendi(Time now) {
 
 // Metodo chiamato quando cambia l'orario per aggiornare lo stato in base alla temperatura
 std::string ConTermometro::OnTimeChanged(Time now) {
-    std::string msg = "";
-    int diffMin;
-    if(!acceso) {
-        // Se spento, la temperatura scende leggermente
-        tempAttuale-=randomFloat(0.01f, 0.05f);
+    // Calcola minuti passati dall'ultimo aggiornamento
+    int diffMin = ultimoAggiornamento.DifferenzaMin(now);
+    if (diffMin >= 0) {
+        if (!acceso) {
+            // Impianto spento: ogni minuto diminuisce
+            tempAttuale -= randomFloat(0.01f, 0.05f);
 
-        // Se la temperatura scende sotto la soglia, accendi l’impianto
-        if(tempAttuale<=tempAccensione)
-            return Accendi(now);
+            // Aggiornamento
+            ultimoAggiornamento = now;
 
-        msg = "Impianto " + this->nome + ": temperatura modificata a " + std::to_string(this->tempAttuale);
-    }
-    else {
-        // Se acceso, verifica quanto tempo è passato dall’ultimo aggiornamento
-        diffMin = ultimoAggiornamento.DifferenzaMin(now);
+            if (tempAttuale < tempAccensione)
+                return Accendi(now);
+        } else {
+            // Impianto acceso: ogni 60 minuti aumenta
+            if (diffMin >= 60) {
+                tempAttuale += randomFloat(0.75f, 1.0f);
 
-        // Dopo almeno 60 minuti, aumenta la temperatura
-        if(diffMin >= 60) {
-            tempAttuale+=randomFloat(0.75f, 1.0f);
-            msg = "Impianto " + this->nome + ": temperatura modificata a " + std::to_string(this->tempAttuale);
+                // Se supera la soglia massima, spegni
+                if (tempAttuale >= tempSpegnimento)
+                    return Spegni();
+
+                // Reset
+                ultimoAggiornamento = now;
+            }
         }
-
-        // Se la temperatura supera la soglia, spegni l’impianto
-        if(tempAttuale >= tempSpegnimento)
-            return Spegni();
     }
-    // Aggiorna l’orario dell’ultima modifica
-    ultimoAggiornamento = now;
 
-    return msg;
+    return "";
 }
-
 // Questo metodo non serve in questa classe => non c'è un timer da resettare!
 void ConTermometro::ResetTimers(){}
 

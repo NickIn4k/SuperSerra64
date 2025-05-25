@@ -50,13 +50,13 @@ int main() {
                 cout << "Temperatura spegnimento in C: ";
                 cin >> tempSpegn;
                 // Controlla valori validi per temperatura
-                if (cin.fail() || tempAcc < 0.0f || tempSpegn > 50.0f) {
+                if (cin.fail() || tempAcc < 0.0f || tempSpegn > 50.0f || tempSpegn<=tempAcc) {
                     cin.clear();
                     cin.ignore();
                 }
                 else
                     impianto = std::make_unique<ConTermometro>(nome, tempAcc, tempSpegn);
-            }while(cin.fail() || (tempAcc < 0.0f || tempSpegn > 50.0f));
+            }while(cin.fail() || (tempAcc < 0.0f || tempSpegn > 50.0f || tempSpegn<=tempAcc));
         }
 //Impianto manuale
         else if (scelta == 2) {

@@ -1709,3 +1709,399 @@ Impianto: t2, ID: 1, Stato: ACCESO, Ultima accensione: 0:1
 
 [10:0]	Impianto: t1, ID: 0, Stato: ACCESO, Temperatura di accensione: 30.000000, Temperatura di spegnimento: 32.000000, Ultima accensione: 0:1
 
+[0:0]	Orario del comando: 0:0
+
+[0:0]	Aggiornamento orario (minuto per minuto)
+
+[0:0]	Orario del comando: 0:0
+
+[0:1]	Impianto t1 acceso con temperatura: 27.989950
+
+[0:0]	Aggiornamento orario (minuto per minuto)
+
+[0:1]	Orario del comando: 0:1
+
+[0:1]	Aggiornamento orario (minuto per minuto)
+
+[10:0]	Orario del comando: 10:0
+
+[10:0]	Impianto: t1, ID: 0, Stato: ACCESO, Temperatura di accensione: 30.000000, Temperatura di spegnimento: 33.000000, Temperatura attuale: 27.989950, Ultima accensione: 0:1
+
+[10:0]	Orario del comando: 10:0
+
+[10:0]	Aggiornamento orario (minuto per minuto)
+
+[23:0]	Orario del comando: 23:0
+
+[23:0]	Impianto: t1, ID: 0, Stato: ACCESO, Temperatura di accensione: 30.000000, Temperatura di spegnimento: 33.000000, Temperatura attuale: 27.989950, Ultima accensione: 0:1
+
+[0:0]	Orario del comando: 0:0
+
+[0:0]	Aggiornamento orario (minuto per minuto)
+
+[0:10]	Orario del comando: 0:10
+
+[0:10]	Impianto: t1, ID: 0, Stato: SPENTO, Temperatura di accensione: 30.000000, Temperatura di spegnimento: 33.000000, Temperatura attuale: 28.000000, Ultima accensione: -1:-1
+
+[0:0]	Orario del comando: 0:0
+
+[0:0]	Aggiornamento orario (minuto per minuto)
+
+[0:10]	Orario del comando: 0:10
+
+[0:10]	Aggiornamento orario (minuto per minuto)
+
+[4:0]	Orario del comando: 4:0
+
+[4:0]	Impianto: t1, ID: 0, Stato: SPENTO, Temperatura di accensione: 30.000000, Temperatura di spegnimento: 26.000000, Temperatura attuale: 28.000000, Ultima accensione: -1:-1
+
+[0:0]	Orario del comando: 0:0
+
+[0:1]	Impianto t1 acceso con temperatura: 28.000000
+
+[0:0]	Aggiornamento orario (minuto per minuto)
+
+[0:1]	Orario del comando: 0:1
+
+[0:2]	Impianto t1: temperatura diminuita a 27.989950
+
+[0:3]	Impianto t1: temperatura diminuita a 27.957407
+
+[0:4]	Impianto t1: temperatura diminuita a 27.939674
+
+[0:5]	Impianto t1: temperatura diminuita a 27.897326
+
+[0:6]	Impianto t1: temperatura diminuita a 27.863926
+
+[0:7]	Impianto t1: temperatura diminuita a 27.834730
+
+[0:8]	Impianto t1: temperatura diminuita a 27.810719
+
+[0:9]	Impianto t1: temperatura diminuita a 27.764879
+
+[0:10]	Impianto t1: temperatura diminuita a 27.721966
+
+[0:11]	Impianto t1: temperatura diminuita a 27.682102
+
+[0:12]	Impianto t1: temperatura diminuita a 27.665138
+
+[0:13]	Impianto t1: temperatura diminuita a 27.620781
+
+[0:14]	Impianto t1: temperatura diminuita a 27.582361
+
+[0:15]	Impianto t1: temperatura diminuita a 27.551821
+
+[0:16]	Impianto t1: temperatura diminuita a 27.529661
+
+[0:17]	Impianto t1: temperatura diminuita a 27.519062
+
+[0:18]	Impianto t1: temperatura diminuita a 27.505405
+
+[0:19]	Impianto t1: temperatura diminuita a 27.480827
+
+[0:20]	Impianto t1: temperatura diminuita a 27.464935
+
+[0:21]	Impianto t1: temperatura diminuita a 27.448299
+
+[0:22]	Impianto t1: temperatura diminuita a 27.398758
+
+[0:23]	Impianto t1: temperatura diminuita a 27.370930
+
+[0:24]	Impianto t1: temperatura diminuita a 27.356167
+
+[0:25]	Impianto t1: temperatura diminuita a 27.345980
+
+[0:26]	Impianto t1: temperatura diminuita a 27.335623
+
+[0:27]	Impianto t1: temperatura diminuita a 27.310507
+
+[0:28]	Impianto t1: temperatura diminuita a 27.279240
+
+[0:29]	Impianto t1: temperatura diminuita a 27.246393
+
+[0:30]	Impianto t1: temperatura diminuita a 27.212322
+
+[0:31]	Impianto t1: temperatura diminuita a 27.178036
+
+[0:32]	Impianto t1: temperatura diminuita a 27.161386
+
+[0:33]	Impianto t1: temperatura diminuita a 27.124865
+
+[0:34]	Impianto t1: temperatura diminuita a 27.096832
+
+[0:35]	Impianto t1: temperatura diminuita a 27.072748
+
+[0:36]	Impianto t1: temperatura diminuita a 27.060467
+
+[0:37]	Impianto t1: temperatura diminuita a 27.026159
+
+[0:38]	Impianto t1: temperatura diminuita a 26.984827
+
+[0:39]	Impianto t1: temperatura diminuita a 26.942722
+
+[0:40]	Impianto t1: temperatura diminuita a 26.911926
+
+[0:41]	Impianto t1: temperatura diminuita a 26.889849
+
+[0:42]	Impianto t1: temperatura diminuita a 26.844810
+
+[0:43]	Impianto t1: temperatura diminuita a 26.805744
+
+[0:44]	Impianto t1: temperatura diminuita a 26.757507
+
+[0:45]	Impianto t1: temperatura diminuita a 26.710478
+
+[0:46]	Impianto t1: temperatura diminuita a 26.678904
+
+[0:47]	Impianto t1: temperatura diminuita a 26.663210
+
+[0:48]	Impianto t1: temperatura diminuita a 26.634727
+
+[0:49]	Impianto t1: temperatura diminuita a 26.615314
+
+[0:50]	Impianto t1: temperatura diminuita a 26.570826
+
+[0:51]	Impianto t1: temperatura diminuita a 26.552441
+
+[0:52]	Impianto t1: temperatura diminuita a 26.511255
+
+[0:53]	Impianto t1: temperatura diminuita a 26.467508
+
+[0:54]	Impianto t1: temperatura diminuita a 26.417637
+
+[0:55]	Impianto t1: temperatura diminuita a 26.367649
+
+[0:56]	Impianto t1: temperatura diminuita a 26.333189
+
+[0:57]	Impianto t1: temperatura diminuita a 26.307491
+
+[0:58]	Impianto t1: temperatura diminuita a 26.286842
+
+[0:59]	Impianto t1: temperatura diminuita a 26.264952
+
+[1:0]	Impianto t1: temperatura diminuita a 26.221346
+
+[0:1]	Aggiornamento orario (minuto per minuto)
+
+[0:0]	Orario del comando: 0:0
+
+[0:1]	Impianto t1: temperatura diminuita a 27.989950
+
+[0:0]	Aggiornamento orario (minuto per minuto)
+
+[0:1]	Orario del comando: 0:1
+
+[0:2]	Impianto t1: temperatura diminuita a 27.957407
+
+[0:3]	Impianto t1: temperatura diminuita a 27.939674
+
+[0:4]	Impianto t1: temperatura diminuita a 27.897326
+
+[0:5]	Impianto t1: temperatura diminuita a 27.863926
+
+[0:6]	Impianto t1: temperatura diminuita a 27.834730
+
+[0:7]	Impianto t1: temperatura diminuita a 27.810719
+
+[0:8]	Impianto t1: temperatura diminuita a 27.764879
+
+[0:9]	Impianto t1: temperatura diminuita a 27.721966
+
+[0:10]	Impianto t1: temperatura diminuita a 27.682102
+
+[0:11]	Impianto t1: temperatura diminuita a 27.665138
+
+[0:12]	Impianto t1: temperatura diminuita a 27.620781
+
+[0:13]	Impianto t1: temperatura diminuita a 27.582361
+
+[0:14]	Impianto t1: temperatura diminuita a 27.551821
+
+[0:15]	Impianto t1: temperatura diminuita a 27.529661
+
+[0:16]	Impianto t1: temperatura diminuita a 27.519062
+
+[0:17]	Impianto t1: temperatura diminuita a 27.505405
+
+[0:18]	Impianto t1: temperatura diminuita a 27.480827
+
+[0:19]	Impianto t1: temperatura diminuita a 27.464935
+
+[0:20]	Impianto t1: temperatura diminuita a 27.448299
+
+[0:21]	Impianto t1: temperatura diminuita a 27.398758
+
+[0:22]	Impianto t1: temperatura diminuita a 27.370930
+
+[0:23]	Impianto t1: temperatura diminuita a 27.356167
+
+[0:24]	Impianto t1: temperatura diminuita a 27.345980
+
+[0:25]	Impianto t1: temperatura diminuita a 27.335623
+
+[0:26]	Impianto t1: temperatura diminuita a 27.310507
+
+[0:27]	Impianto t1: temperatura diminuita a 27.279240
+
+[0:28]	Impianto t1: temperatura diminuita a 27.246393
+
+[0:29]	Impianto t1: temperatura diminuita a 27.212322
+
+[0:30]	Impianto t1: temperatura diminuita a 27.178036
+
+[0:31]	Impianto t1: temperatura diminuita a 27.161386
+
+[0:32]	Impianto t1: temperatura diminuita a 27.124865
+
+[0:33]	Impianto t1: temperatura diminuita a 27.096832
+
+[0:34]	Impianto t1: temperatura diminuita a 27.072748
+
+[0:35]	Impianto t1: temperatura diminuita a 27.060467
+
+[0:36]	Impianto t1: temperatura diminuita a 27.026159
+
+[0:37]	Impianto t1: temperatura diminuita a 26.984827
+
+[0:38]	Impianto t1: temperatura diminuita a 26.942722
+
+[0:39]	Impianto t1: temperatura diminuita a 26.911926
+
+[0:40]	Impianto t1: temperatura diminuita a 26.889849
+
+[0:41]	Impianto t1: temperatura diminuita a 26.844810
+
+[0:42]	Impianto t1: temperatura diminuita a 26.805744
+
+[0:43]	Impianto t1: temperatura diminuita a 26.757507
+
+[0:44]	Impianto t1: temperatura diminuita a 26.710478
+
+[0:45]	Impianto t1: temperatura diminuita a 26.678904
+
+[0:46]	Impianto t1: temperatura diminuita a 26.663210
+
+[0:47]	Impianto t1: temperatura diminuita a 26.634727
+
+[0:48]	Impianto t1: temperatura diminuita a 26.615314
+
+[0:49]	Impianto t1: temperatura diminuita a 26.570826
+
+[0:50]	Impianto t1: temperatura diminuita a 26.552441
+
+[0:51]	Impianto t1: temperatura diminuita a 26.511255
+
+[0:52]	Impianto t1: temperatura diminuita a 26.467508
+
+[0:53]	Impianto t1: temperatura diminuita a 26.417637
+
+[0:54]	Impianto t1: temperatura diminuita a 26.367649
+
+[0:55]	Impianto t1: temperatura diminuita a 26.333189
+
+[0:56]	Impianto t1: temperatura diminuita a 26.307491
+
+[0:57]	Impianto t1: temperatura diminuita a 26.286842
+
+[0:58]	Impianto t1: temperatura diminuita a 26.264952
+
+[0:59]	Impianto t1: temperatura diminuita a 26.221346
+
+[1:0]	Impianto t1: temperatura diminuita a 26.210396
+
+[1:1]	Impianto t1: temperatura diminuita a 26.185362
+
+[1:2]	Impianto t1: temperatura diminuita a 26.171658
+
+[1:3]	Impianto t1: temperatura diminuita a 26.134569
+
+[1:4]	Impianto t1: temperatura diminuita a 26.122320
+
+[1:5]	Impianto t1: temperatura diminuita a 26.111969
+
+[1:6]	Impianto t1: temperatura diminuita a 26.065218
+
+[1:7]	Impianto t1: temperatura diminuita a 26.044182
+
+[1:8]	Impianto t1: temperatura diminuita a 26.023266
+
+[1:9]	Impianto t1: temperatura diminuita a 25.989750
+
+[1:10]	Impianto t1: temperatura diminuita a 25.952103
+
+[1:11]	Impianto t1: temperatura diminuita a 25.908598
+
+[1:12]	Impianto t1: temperatura diminuita a 25.869537
+
+[1:13]	Impianto t1: temperatura diminuita a 25.840139
+
+[1:14]	Impianto t1: temperatura diminuita a 25.821924
+
+[1:15]	Impianto t1: temperatura diminuita a 25.782175
+
+[1:16]	Impianto t1: temperatura diminuita a 25.753437
+
+[1:17]	Impianto t1: temperatura diminuita a 25.725119
+
+[1:18]	Impianto t1: temperatura diminuita a 25.677153
+
+[1:19]	Impianto t1: temperatura diminuita a 25.637375
+
+[1:20]	Impianto t1: temperatura diminuita a 25.623043
+
+[1:21]	Impianto t1: temperatura diminuita a 25.589081
+
+[1:22]	Impianto t1: temperatura diminuita a 25.563671
+
+[1:23]	Impianto t1: temperatura diminuita a 25.524271
+
+[1:24]	Impianto t1: temperatura diminuita a 25.489912
+
+[1:25]	Impianto t1: temperatura diminuita a 25.457016
+
+[1:26]	Impianto t1: temperatura diminuita a 25.432562
+
+[1:27]	Impianto t1: temperatura diminuita a 25.416500
+
+[1:28]	Impianto t1: temperatura diminuita a 25.397495
+
+[1:29]	Impianto t1: temperatura diminuita a 25.370489
+
+[1:30]	Impianto t1: temperatura diminuita a 25.328373
+
+[1:31]	Impianto t1: temperatura diminuita a 25.297689
+
+[1:32]	Impianto t1: temperatura diminuita a 25.248091
+
+[1:33]	Impianto t1: temperatura diminuita a 25.208029
+
+[1:34]	Impianto t1: temperatura diminuita a 25.184206
+
+[1:35]	Impianto t1: temperatura diminuita a 25.167446
+
+[1:36]	Impianto t1: temperatura diminuita a 25.131153
+
+[1:37]	Impianto t1: temperatura diminuita a 25.101477
+
+[1:38]	Impianto t1: temperatura diminuita a 25.088936
+
+[1:39]	Impianto t1: temperatura diminuita a 25.050945
+
+[1:40]	Impianto t1: temperatura diminuita a 25.020754
+
+[1:41]	Impianto t1: temperatura diminuita a 25.004854
+
+[1:42]	Impianto t1 acceso con temperatura: 24.956871
+
+[2:42]	Impianto t1: temperatura aumentata a 25.742266
+
+[3:42]	Impianto t1: temperatura aumentata a 26.718546
+
+[4:42]	Impianto t1: temperatura aumentata a 27.641769
+
+[0:1]	Aggiornamento orario (minuto per minuto)
+
+[5:0]	Orario del comando: 5:0
+
+[5:0]	Aggiornamento orario (minuto per minuto)
+
