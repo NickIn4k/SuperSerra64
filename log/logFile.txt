@@ -229,3 +229,29 @@ Impianto: t2, ID: 1, Stato: ACCESO, Ultima accensione: 0:1
 [2:0]	Impianto: man1, ID: 0, Stato: SPENTO, Ultima accensione: 1:0
 
 
+[0:0]	Orario del comando: 0:0
+
+[0:0]	Impianto: t1, ID: 0, Stato: SPENTO, Ultima accensione: -1:-1
+
+[0:0]	Impianto: m1, ID: 1, Stato: SPENTO, Ultima accensione: -1:-1
+
+[0:0]	Impianto: a1, ID: 2, Stato: SPENTO, Ultima accensione: -1:-1
+
+[0:0]	Orario del comando: 0:0
+
+[0:0]	Orario del comando: 0:0
+
+[0:0]	Impianto: t1, ID: 0, Stato: SPENTO, Ultima accensione: -1:-1
+
+[0:0]	Impianto: m1, ID: 1, Stato: SPENTO, Ultima accensione: -1:-1
+
+[0:0]	Orario del comando: 0:0
+
+[0:0]	Impianto: m1, ID: 1, Stato: SPENTO, Ultima accensione: -1:-1
+
+[0:0]	Orario del comando: 0:0
+
+[0:0]	Impianto: t1, ID: 0, Stato: SPENTO, Ultima accensione: -1:-1
+
+[0:0]	Orario del comando: 0:0
+

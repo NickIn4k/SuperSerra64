@@ -8,8 +8,8 @@ class Automatico: public Impianto {
 private:
     Time contMin;
 protected:
-    Time timerSpegnimento;
-    Time timerAccensione;
+    Time timerSpegnimento;  // Il timer per lo spegnimento
+    Time orarioAccensione;  // L'ora di accensione
 public:
     Automatico() = default;
     Automatico(const std::string &Nome, Time newTimer);
