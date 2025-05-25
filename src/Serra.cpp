@@ -15,7 +15,7 @@ void Serra::setTime(int hour, int minute) {
 
     while(now.Hour != hour || now.Minute != minute) {
         now++;
-        //CHECK PER OGNI SINGOLO IMPIANTO CON IL METODO OnTimeChanged(now)
+        //Ccheck per ogni impianto con OnTimeChanged(now)
         for (auto it = impianti.begin(); it != impianti.end(); ++it) {
             it->second->OnTimeChanged(now);
         }

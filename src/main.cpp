@@ -44,9 +44,9 @@ int main() {
         if (scelta == 1) {
             float tempAcc, tempSpegn;
             do {
-                cout << "Temperatura accensione in °C: ";
+                cout << "Temperatura accensione in C: ";
                 cin >> tempAcc;
-                cout << "Temperatura spegnimento in °C: ";
+                cout << "Temperatura spegnimento in C: ";
                 cin >> tempSpegn;
 
                 if (cin.fail() || tempAcc < 0.0f || tempSpegn > 50.0f) {
@@ -71,7 +71,7 @@ int main() {
                 }
                 else
                     impianto = std::make_unique<Manuale>(nome, Time(hStart,mStart), Time(hStop,mStop));
-            }while(cin.fail() || hStart < 0 || hStart > 23 || mStart < 0 || mStart > 59)
+            }while(cin.fail() || hStart < 0 || hStart > 23 || mStart < 0 || mStart > 59);
         }
         else if (scelta == 3) {
             int hourTimer, minuteTimer;

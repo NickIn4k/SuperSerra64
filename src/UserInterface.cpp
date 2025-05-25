@@ -60,7 +60,7 @@ std::vector<std::string> UserInterface::commandParser(const std::string &command
 
 
 void UserInterface::processCommand(const std::string &command, const Time &now, Serra &serra) {
-    logMessage(now, "L'orario attuale e' " + now.getTime(), 0);
+    logMessage(now, "Orario del comando: " + now.getTime(), 0);
     std::vector<std::string> tokens = commandParser(command);
 
     if (tokens.empty()) {
